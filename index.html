@@ -98,17 +98,23 @@
             color: #00ccff; /* Blue for runewords */
             font-style: italic;
         }
-        .cube-table td {
-            color: #00ff00; /* Green for cube recipes */
+        .cube-ingredients {
+            color: #00ff00; /* Green for cube ingredients */
         }
-        .crafting-table td:nth-child(1), .crafting-table td:nth-child(2) {
-            color: #800080; /* Purple for crafting item types and ingredients */
+        .cube-result {
+            color: #ffff00; /* Yellow for cube results */
         }
-        .shopping-table td:nth-child(1) {
-            color: #ffff00; /* Yellow for shopping item types */
+        .crafting-item {
+            color: #800080; /* Purple for crafting item types */
         }
-        .shopping-table td:nth-child(2) {
-            color: #00ffff; /* Cyan for desired stats in shopping */
+        .crafting-ingredients {
+            color: #0000ff; /* Blue for crafting ingredients */
+        }
+        .shopping-item {
+            color: #00ff00; /* Green for shopping item types */
+        }
+        .shopping-stats {
+            color: #ffff00; /* Yellow for desired stats in shopping */
         }
     </style>
 </head>
@@ -148,7 +154,6 @@
                 <tr><td class="rune">El</td><td>+50 AR, +1 Light Radius</td><td>+15 Def, +1 Light Radius</td><td>Normal Countess, drops</td></tr>
                 <tr><td class="rune">Eld</td><td>+75% Damage to Undead, +50 AR vs. Undead</td><td>+15% Stamina Regen, +7% Block (Shields)</td><td>Normal Countess, 3 El</td></tr>
                 <tr><td class="rune">Tir</td><td>+2 Mana Per Kill</td><td>+2 Mana Per Kill</td><td>Normal Countess, 3 Eld</td></tr>
-                <!-- Add more low runes as needed -->
             </tbody>
         </table>
         <h3>High Runes (Gul to Zod)</h3>
@@ -165,7 +170,6 @@
                 <tr><td class="rune">Gul</td><td>+20% AR</td><td>+5% Max Poison Resist</td><td>Hell Countess, 2 Ist + Ruby</td></tr>
                 <tr><td class="rune">Vex</td><td>7% Mana Steal</td><td>+5% Max Fire Resist</td><td>Hell Countess, 2 Gul + Emerald</td></tr>
                 <tr><td class="rune">Zod</td><td>Indestructible</td><td>Indestructible</td><td>Rare drop in Hell</td></tr>
-                <!-- Add more high runes as needed -->
             </tbody>
         </table>
     </details>
@@ -186,7 +190,6 @@
                 <tr><td class="runeword">Ancient's Pledge</td><td class="rune">Ral Ort Tal</td><td>3-socket Shields</td><td>+50% Enhanced Defense, Cold Resist +43%, Fire Resist +48%, Lightning Resist +48%, Poison Resist +48%, 10% Damage Taken Goes to Mana</td></tr>
                 <tr><td class="runeword">Spirit</td><td class="rune">Tal Thul Ort Amn</td><td>4-socket Swords/Shields</td><td>+2 To All Skills, +25-35% FCR, +55% FHR, +250 Def vs. Missile, +22 Vitality, +89-112 Mana, Magic Absorb 3-8</td></tr>
                 <tr><td class="runeword">Insight</td><td class="rune">Ral Tir Tal Sol</td><td>4-socket Polearms/Staves</td><td>Level 12-17 Meditation Aura, +35% FCR, +200-260% Enhanced Damage, +9 Min Damage, 23% Better Chance of Magic Find</td></tr>
-                <!-- Add more runewords as needed -->
             </tbody>
         </table>
     </details>
@@ -207,7 +210,6 @@
                 <tr><td class="runeword">Insight (for A2 Merc)</td><td class="rune">Ral Tir Tal Sol</td><td>4os Eth. Thresher, 4os Eth. Giant Thresher, 4os Eth. Mancatcher</td></tr>
                 <tr><td class="runeword">Spirit</td><td class="rune">Tal Thul Ort Amn</td><td>4os Broad Sword, 4os Crystal Sword</td></tr>
                 <tr><td class="runeword">Stealth</td><td class="rune">Tal Eth</td><td>2os Quilted Armor, 2os Leather Armor</td></tr>
-                <!-- Add more early ladder runewords as needed -->
             </tbody>
         </table>
         <h3>Mid/Late-Game Runewords</h3>
@@ -222,7 +224,6 @@
             <tbody>
                 <tr><td class="runeword">Beast (for A5 Merc)</td><td class="rune">Ber Tir Um Mal Lum</td><td>5os Eth. Berserker Axe</td></tr>
                 <tr><td class="runeword">Grief</td><td class="rune">Eth Tir Lo Mal Ral</td><td>5os Phase Blade</td></tr>
-                <!-- Add more mid/late-game runewords as needed -->
             </tbody>
         </table>
     </details>
@@ -231,7 +232,7 @@
     <details id="cube">
         <summary>Cube Recipes</summary>
         <h3>Rune Upgrades</h3>
-        <table class="cube-table">
+        <table>
             <thead>
                 <tr>
                     <th>Ingredients</th>
@@ -239,14 +240,13 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td>3 El Runes</td><td>1 Eld Rune</td></tr>
-                <tr><td>3 Eld Runes</td><td>1 Tir Rune</td></tr>
-                <tr><td>3 Thul Runes + 1 Chipped Topaz</td><td>1 Amn Rune</td></tr>
-                <!-- Add more rune upgrades as needed -->
+                <tr><td class="cube-ingredients">3 El Runes</td><td class="cube-result">1 Eld Rune</td></tr>
+                <tr><td class="cube-ingredients">3 Eld Runes</td><td class="cube-result">1 Tir Rune</td></tr>
+                <tr><td class="cube-ingredients">3 Thul Runes + 1 Chipped Topaz</td><td class="cube-result">1 Amn Rune</td></tr>
             </tbody>
         </table>
         <h3>Gem Upgrades</h3>
-        <table class="cube-table">
+        <table>
             <thead>
                 <tr>
                     <th>Ingredients</th>
@@ -254,9 +254,8 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td>3 Chipped Gems (same type)</td><td>1 Flawed Gem (same type)</td></tr>
-                <tr><td>3 Flawed Gems (same type)</td><td>1 Normal Gem (same type)</td></tr>
-                <!-- Add more gem upgrades as needed -->
+                <tr><td class="cube-ingredients">3 Chipped Gems (same type)</td><td class="cube-result">1 Flawed Gem (same type)</td></tr>
+                <tr><td class="cube-ingredients">3 Flawed Gems (same type)</td><td class="cube-result">1 Normal Gem (same type)</td></tr>
             </tbody>
         </table>
     </details>
@@ -264,20 +263,230 @@
     <!-- Stat Breakpoints Section -->
     <details id="breakpoints">
         <summary>Stat Breakpoints</summary>
-        <p>Faster Cast Rate (FCR) breakpoints for all classes, sourced from Maxroll.gg.</p>
+        <p>Faster Cast Rate (FCR) and Faster Hit Recovery (FHR) breakpoints for all classes, sourced from Maxroll.gg.</p>
+        <h3>Amazon</h3>
         <table>
             <thead>
                 <tr>
-                    <th>Class</th>
                     <th>FCR %</th>
+                    <th>Frames</th>
+                    <th>FHR %</th>
                     <th>Frames</th>
                 </tr>
             </thead>
             <tbody>
-                <tr><td>Sorceress</td><td>0</td><td>13</td></tr>
-                <tr><td>Sorceress</td><td>9</td><td>12</td></tr>
-                <tr><td>Sorceress</td><td>20</td><td>11</td></tr>
-                <!-- Add more breakpoints as needed -->
+                <tr><td>0</td><td>13</td><td>0</td><td>11</td></tr>
+                <tr><td>9</td><td>12</td><td>6</td><td>10</td></tr>
+                <tr><td>20</td><td>11</td><td>13</td><td>9</td></tr>
+                <tr><td>37</td><td>10</td><td>20</td><td>8</td></tr>
+                <tr><td>63</td><td>9</td><td>32</td><td>7</td></tr>
+                <tr><td>105</td><td>8</td><td>52</td><td>6</td></tr>
+                <tr><td>200</td><td>7</td><td>86</td><td>5</td></tr>
+                <tr><td></td><td></td><td>174</td><td>4</td></tr>
+                <tr><td></td><td></td><td>600</td><td>3</td></tr>
+            </tbody>
+        </table>
+        <h3>Assassin</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>FCR %</th>
+                    <th>Frames</th>
+                    <th>FHR %</th>
+                    <th>Frames</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>0</td><td>16</td><td>0</td><td>9</td></tr>
+                <tr><td>8</td><td>15</td><td>7</td><td>8</td></tr>
+                <tr><td>16</td><td>14</td><td>15</td><td>7</td></tr>
+                <tr><td>27</td><td>13</td><td>27</td><td>6</td></tr>
+                <tr><td>42</td><td>12</td><td>48</td><td>5</td></tr>
+                <tr><td>65</td><td>11</td><td>86</td><td>4</td></tr>
+                <tr><td>102</td><td>10</td><td>200</td><td>3</td></tr>
+                <tr><td>174</td><td>9</td><td>4680</td><td>2</td></tr>
+            </tbody>
+        </table>
+        <h3>Barbarian</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>FCR %</th>
+                    <th>Frames</th>
+                    <th>FHR %</th>
+                    <th>Frames</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>0</td><td>15</td><td>0</td><td>9</td></tr>
+                <tr><td>9</td><td>14</td><td>7</td><td>8</td></tr>
+                <tr><td>18</td><td>13</td><td>15</td><td>7</td></tr>
+                <tr><td>30</td><td>12</td><td>27</td><td>6</td></tr>
+                <tr><td>48</td><td>11</td><td>48</td><td>5</td></tr>
+                <tr><td>75</td><td>10</td><td>86</td><td>4</td></tr>
+                <tr><td>120</td><td>9</td><td>200</td><td>3</td></tr>
+                <tr><td></td><td></td><td>4680</td><td>2</td></tr>
+            </tbody>
+        </table>
+        <h3>Druid (Human, 1-Handed Weapon or 2-Handed Sword)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>FCR %</th>
+                    <th>Frames</th>
+                    <th>FHR %</th>
+                    <th>Frames</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>0</td><td>19</td><td>0</td><td>14</td></tr>
+                <tr><td>4</td><td>18</td><td>3</td><td>13</td></tr>
+                <tr><td>10</td><td>17</td><td>7</td><td>12</td></tr>
+                <tr><td>19</td><td>16</td><td>13</td><td>11</td></tr>
+                <tr><td>30</td><td>15</td><td>19</td><td>10</td></tr>
+                <tr><td>46</td><td>14</td><td>29</td><td>9</td></tr>
+                <tr><td>68</td><td>13</td><td>42</td><td>8</td></tr>
+                <tr><td>99</td><td>12</td><td>63</td><td>7</td></tr>
+                <tr><td>163</td><td>11</td><td>99</td><td>6</td></tr>
+                <tr><td></td><td></td><td>174</td><td>5</td></tr>
+                <tr><td></td><td></td><td>456</td><td>4</td></tr>
+            </tbody>
+        </table>
+        <h3>Druid (Human, Other Weapons)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>FCR %</th>
+                    <th>Frames</th>
+                    <th>FHR %</th>
+                    <th>Frames</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>0</td><td>19</td><td>0</td><td>13</td></tr>
+                <tr><td>4</td><td>18</td><td>5</td><td>12</td></tr>
+                <tr><td>10</td><td>17</td><td>10</td><td>11</td></tr>
+                <tr><td>19</td><td>16</td><td>16</td><td>10</td></tr>
+                <tr><td>30</td><td>15</td><td>26</td><td>9</td></tr>
+                <tr><td>46</td><td>14</td><td>39</td><td>8</td></tr>
+                <tr><td>68</td><td>13</td><td>56</td><td>7</td></tr>
+                <tr><td>99</td><td>12</td><td>86</td><td>6</td></tr>
+                <tr><td>163</td><td>11</td><td>152</td><td>5</td></tr>
+                <tr><td></td><td></td><td>377</td><td>4</td></tr>
+            </tbody>
+        </table>
+        <h3>Druid (Wolf)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>FCR %</th>
+                    <th>Frames</th>
+                    <th>FHR %</th>
+                    <th>Frames</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>0</td><td>19</td><td>0</td><td>7</td></tr>
+                <tr><td>4</td><td>18</td><td>9</td><td>6</td></tr>
+                <tr><td>10</td><td>17</td><td>20</td><td>5</td></tr>
+                <tr><td>19</td><td>16</td><td>42</td><td>4</td></tr>
+                <tr><td>30</td><td>15</td><td>86</td><td>3</td></tr>
+                <tr><td>46</td><td>14</td><td>280</td><td>2</td></tr>
+                <tr><td>68</td><td>13</td><td></td><td></td></tr>
+                <tr><td>99</td><td>12</td><td></td><td></td></tr>
+                <tr><td>163</td><td>11</td><td></td><td></td></tr>
+            </tbody>
+        </table>
+        <h3>Druid (Bear)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>FCR %</th>
+                    <th>Frames</th>
+                    <th>FHR %</th>
+                    <th>Frames</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>0</td><td>19</td><td>0</td><td>13</td></tr>
+                <tr><td>4</td><td>18</td><td>5</td><td>12</td></tr>
+                <tr><td>10</td><td>17</td><td>10</td><td>11</td></tr>
+                <tr><td>19</td><td>16</td><td>16</td><td>10</td></tr>
+                <tr><td>30</td><td>15</td><td>24</td><td>9</td></tr>
+                <tr><td>46</td><td>14</td><td>37</td><td>8</td></tr>
+                <tr><td>68</td><td>13</td><td>54</td><td>7</td></tr>
+                <tr><td>99</td><td>12</td><td>86</td><td>6</td></tr>
+                <tr><td>163</td><td>11</td><td>152</td><td>5</td></tr>
+                <tr><td></td><td></td><td>360</td><td>4</td></tr>
+            </tbody>
+        </table>
+        <h3>Necromancer</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>FCR %</th>
+                    <th>Frames</th>
+                    <th>FHR %</th>
+                    <th>Frames</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>0</td><td>15</td><td>0</td><td>13</td></tr>
+                <tr><td>9</td><td>14</td><td>5</td><td>12</td></tr>
+                <tr><td>18</td><td>13</td><td>10</td><td>11</td></tr>
+                <tr><td>30</td><td>12</td><td>16</td><td>10</td></tr>
+                <tr><td>48</td><td>11</td><td>26</td><td>9</td></tr>
+                <tr><td>75</td><td>10</td><td>39</td><td>8</td></tr>
+                <tr><td>125</td><td>9</td><td>56</td><td>7</td></tr>
+                <tr><td></td><td></td><td>86</td><td>6</td></tr>
+                <tr><td></td><td></td><td>152</td><td>5</td></tr>
+                <tr><td></td><td></td><td>377</td><td>4</td></tr>
+            </tbody>
+        </table>
+        <h3>Paladin</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>FCR %</th>
+                    <th>Frames</th>
+                    <th>FHR %</th>
+                    <th>Frames</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>0</td><td>13</td><td>0</td><td>9</td></tr>
+                <tr><td>9</td><td>12</td><td>7</td><td>8</td></tr>
+                <tr><td>18</td><td>11</td><td>15</td><td>7</td></tr>
+                <tr><td>30</td><td>10</td><td>27</td><td>6</td></tr>
+                <tr><td>48</td><td>9</td><td>48</td><td>5</td></tr>
+                <tr><td>75</td><td>8</td><td>86</td><td>4</td></tr>
+                <tr><td>125</td><td>7</td><td>200</td><td>3</td></tr>
+                <tr><td></td><td></td><td>4680</td><td>2</td></tr>
+            </tbody>
+        </table>
+        <h3>Sorceress</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>FCR %</th>
+                    <th>Frames</th>
+                    <th>FHR %</th>
+                    <th>Frames</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>0</td><td>13</td><td>0</td><td>15</td></tr>
+                <tr><td>9</td><td>12</td><td>5</td><td>14</td></tr>
+                <tr><td>20</td><td>11</td><td>9</td><td>13</td></tr>
+                <tr><td>37</td><td>10</td><td>14</td><td>12</td></tr>
+                <tr><td>63</td><td>9</td><td>20</td><td>11</td></tr>
+                <tr><td>105</td><td>8</td><td>30</td><td>10</td></tr>
+                <tr><td>200</td><td>7</td><td>42</td><td>9</td></tr>
+                <tr><td></td><td></td><td>60</td><td>8</td></tr>
+                <tr><td></td><td></td><td>86</td><td>7</td></tr>
+                <tr><td></td><td></td><td>142</td><td>6</td></tr>
+                <tr><td></td><td></td><td>280</td><td>5</td></tr>
+                <tr><td></td><td></td><td>1480</td><td>4</td></tr>
             </tbody>
         </table>
     </details>
@@ -285,20 +494,20 @@
     <!-- Crafting Section -->
     <details id="crafting">
         <summary>Crafting</summary>
-        <h3>Crafting Formula (Explained Like You’re 5)</h3>
-        <p>Imagine you’re baking a super cool cake, and how yummy it turns out depends on two things: how good you are at baking (your level) and how fancy your mixing bowl is (the item’s level). We call this special cake number the “item level,” or ilvl for short.</p>
+        <h3>Crafting Explanation</h3>
+        <p>Think of crafting like cooking a special recipe. The quality of your dish depends on two main things: the chef's skill (your character level) and the quality of the ingredients (the item's level). In Diablo 2, this combined quality is called the "item level" or ilvl. The higher the ilvl, the better the potential affixes (like extra sprinkles or toppings) your crafted item can have.</p>
+        <p>To calculate the ilvl of a crafted item, take half of your character level and half of the item's level, then add them together. For example, if your character is level 80 (half is 40) and the item is level 60 (half is 30), the crafted item's ilvl would be 40 + 30 = 70.</p>
         <h3>Blood Crafts</h3>
-        <table class="crafting-table">
+        <table>
             <thead>
                 <tr>
-                    <th>Item Type</th>
-                    <th>Ingredients</th>
+                    <th class="crafting-item">Item Type</th>
+                    <th class="crafting-ingredients">Ingredients</th>
                     <th>Fixed Affixes</th>
                 </tr>
             </thead>
             <tbody>
-                <tr><td>Blood Gloves</td><td>Magic Heavy Gloves/Sharkskin Gloves/Vampirebone Gloves + Jewel + Nef Rune + Perfect Ruby</td><td>5-10% Crushing Blow, 1-3% Life Steal, +10-20 Life</td></tr>
-                <!-- Add more blood crafts as needed -->
+                <tr><td class="crafting-item">Blood Gloves</td><td class="crafting-ingredients">Magic Heavy Gloves/Sharkskin Gloves/Vampirebone Gloves + Jewel + Nef Rune + Perfect Ruby</td><td>5-10% Crushing Blow, 1-3% Life Steal, +10-20 Life</td></tr>
             </tbody>
         </table>
     </details>
@@ -306,22 +515,26 @@
     <!-- Shopping Guide Section -->
     <details id="shopping">
         <summary>Shopping Guide</summary>
-        <p>Where to buy useful items from vendors. Includes items for all characters, class-specific items, and ladder reset items. Levels marked with ** indicate the lowest possible level to get the affix(es), *** indicate the recommended shopping level, and **** indicate the highest possible level breakpoint for the best affix.</p>
+        <p>Where to buy useful items from vendors. The levels in the table indicate:</p>
+        <ul>
+            <li><strong>Low (**):</strong> Lowest level to get the affix.</li>
+            <li><strong>Recommended (***):</strong> Best level to shop for balanced cost and quality.</li>
+            <li><strong>High (****):</strong> Highest level for the best possible affix.</li>
+        </ul>
         <h3>Weapons for All Characters</h3>
-        <table class="shopping-table">
+        <table>
             <thead>
                 <tr>
-                    <th>Item Type</th>
-                    <th>Desired Stats</th>
+                    <th class="shopping-item">Item Type</th>
+                    <th class="shopping-stats">Desired Stats</th>
                     <th>Vendor & Location</th>
-                    <th>Recommended Level/Difficulty</th>
+                    <th>Level (Low/Rec/High)</th>
                     <th>Notes</th>
                 </tr>
             </thead>
             <tbody>
-                <tr><td>Weapon of Life Tap (Wand/Daggers)</td><td>Life Tap</td><td>Malah Hell, Drognan Hell</td><td>19**, 78***, 91****</td><td></td></tr>
-                <tr><td>+3 Skill Tree Weapons</td><td>+3 to [Skill Tree]</td><td>Drognan Nightmare</td><td>35***</td><td>For early ladder</td></tr>
-                <!-- Add more shopping items as needed -->
+                <tr><td class="shopping-item">Weapon of Life Tap (Wand/Daggers)</td><td class="shopping-stats">Life Tap</td><td>Malah Hell, Drognan Hell</td><td>19 / 78 / 91</td><td></td></tr>
+                <tr><td class="shopping-item">+3 Skill Tree Weapons</td><td class="shopping-stats">+3 to [Skill Tree]</td><td>Drognan Nightmare</td><td>- / 35 / -</td><td>For early ladder</td></tr>
             </tbody>
         </table>
     </details>
@@ -342,10 +555,33 @@
         </ol>
     </details>
 
-    <!-- Maps Section (Placeholder) -->
+    <!-- Maps Section -->
     <details id="maps">
         <summary>Maps</summary>
-        <p>Map data to be added.</p>
+        <h3>Tower and Catacombs Maps</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Area</th>
+                    <th>Normal Level</th>
+                    <th>Nightmare Level</th>
+                    <th>Hell Level</th>
+                    <th>Direction</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Black Marsh</td><td>6</td><td>38</td><td>69</td><td>Follow path</td></tr>
+                <tr><td>Tower Cellar Level 1</td><td>7</td><td>38</td><td>75</td><td>Left</td></tr>
+                <tr><td>Tower Cellar Level 2</td><td>7</td><td>39</td><td>76</td><td>Left</td></tr>
+                <tr><td>Tower Cellar Level 3</td><td>7</td><td>40</td><td>77</td><td>Left</td></tr>
+                <tr><td>Tower Cellar Level 4</td><td>7</td><td>41</td><td>78</td><td>Left</td></tr>
+                <tr><td>Tower Cellar Level 5</td><td>7</td><td>42</td><td>79</td><td></td></tr>
+                <tr><td>Cathedral</td><td>11</td><td>42</td><td>72</td><td>Right</td></tr>
+                <tr><td>Catacombs Level 1</td><td>11</td><td>42</td><td>72</td><td></td></tr>
+                <tr><td>Catacombs Level 2</td><td>11</td><td>42</td><td>73</td><td>wp→Right</td></tr>
+                <tr><td>Catacombs Level 3</td><td>12</td><td>43</td><td>73</td><td></td></tr>
+            </tbody>
+        </table>
     </details>
 
     <script>
