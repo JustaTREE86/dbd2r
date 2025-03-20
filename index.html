@@ -97,6 +97,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="#runes">Runes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#runeword-bases">Runeword Bases</a></li>
                     <li class="nav-item"><a class="nav-link" href="#runewords">Runewords</a></li>
                     <li class="nav-item"><a class="nav-link" href="#cube">Cube Recipes</a></li>
                     <li class="nav-item"><a class="nav-link" href="#breakpoints">Stat Breakpoints</a></li>
@@ -139,17 +140,17 @@
                     <tr><td class="rune">Ith</td><td>+9 Max Damage</td><td>15% Damage to Mana</td><td>Normal Countess, 3 Eth</td></tr>
                     <tr><td class="rune">Tal</td><td>+75 Poison Dmg (5s)</td><td>+35% Poison Res</td><td>Normal Countess, 3 Ith</td></tr>
                     <tr><td class="rune">Ral</td><td>+5-30 Fire Dmg</td><td>+35% Fire Res</td><td>Normal Countess, 3 Tal</td></tr>
-                    <tr><td class="rune">Ort</td><td>+1-50 Lightning Dmg</td><td>+35% Lightning Res</td><td>Normal Countess, 3 Ral</td></tr>
-                    <tr><td class="rune">Thul</td><td>+3-14 Cold Dmg (3s)</td><td>+35% Cold Res</td><td>Normal Countess, 3 Ort + Chipped Topaz</td></tr>
+                    <tr><td class="rune">Ort</td><td>+1-50 Lightning Dmg</td><td>+35% Lightning Res</td><td>Nightmare Countess, 3 Ral</td></tr>
+                    <tr><td class="rune">Thul</td><td>+3-14 Cold Dmg (3s)</td><td>+35% Cold Res</td><td>Nightmare Countess, 3 Ort + Chipped Topaz</td></tr>
                     <tr><td class="rune">Amn</td><td>7% Life Steal</td><td>Attacker Takes 14 Dmg</td><td>Nightmare Countess, 3 Thul + Chipped Amethyst</td></tr>
                     <tr><td class="rune">Sol</td><td>+9 Min Damage</td><td>-7 Damage Taken</td><td>Nightmare Countess, 3 Amn + Chipped Sapphire</td></tr>
                     <tr><td class="rune">Shael</td><td>+20% IAS</td><td>+20% FHR</td><td>Nightmare Countess, 3 Sol + Chipped Ruby</td></tr>
                     <tr><td class="rune">Dol</td><td>25% Flee</td><td>+7 Life Regen</td><td>Nightmare Countess, 3 Shael + Chipped Emerald</td></tr>
-                    <tr><td class="rune">Hel</td><td>-20% Requirements</td><td>-15% Requirements</td><td>Nightmare Countess, 3 Dol + Chipped Diamond</td></tr>
-                    <tr><td class="rune">Io</td><td>+10 Vitality</td><td>+10 Vitality</td><td>Nightmare Countess, 3 Hel + Flawed Topaz</td></tr>
-                    <tr><td class="rune">Lum</td><td>+10 Energy</td><td>+10 Energy</td><td>Nightmare Countess, 3 Io + Flawed Amethyst</td></tr>
-                    <tr><td class="rune">Ko</td><td>+10 Dexterity</td><td>+10 Dexterity</td><td>Nightmare Countess, 3 Lum + Flawed Sapphire</td></tr>
-                    <tr><td class="rune">Fal</td><td>+10 Strength</td><td>+10 Strength</td><td>Nightmare Countess, 3 Ko + Flawed Ruby</td></tr>
+                    <tr><td class="rune">Hel</td><td>-20% Requirements</td><td>-15% Requirements</td><td>Hell Countess, 3 Dol + Chipped Diamond</td></tr>
+                    <tr><td class="rune">Io</td><td>+10 Vitality</td><td>+10 Vitality</td><td>Hell Countess, 3 Hel + Flawed Topaz</td></tr>
+                    <tr><td class="rune">Lum</td><td>+10 Energy</td><td>+10 Energy</td><td>Hell Countess, 3 Io + Flawed Amethyst</td></tr>
+                    <tr><td class="rune">Ko</td><td>+10 Dexterity</td><td>+10 Dexterity</td><td>Hell Countess, 3 Lum + Flawed Sapphire</td></tr>
+                    <tr><td class="rune">Fal</td><td>+10 Strength</td><td>+10 Strength</td><td>Hell Countess, 3 Ko + Flawed Ruby</td></tr>
                     <tr><td class="rune">Lem</td><td>+75% Gold</td><td>+50% Gold</td><td>Hell Countess, 3 Fal + Flawed Emerald</td></tr>
                     <tr><td class="rune">Pul</td><td>+75% Dmg to Demons, +100 AR vs. Demons</td><td>+30% Def</td><td>Hell Countess, 3 Lem + Flawed Diamond</td></tr>
                     <tr><td class="rune">Um</td><td>25% Open Wounds</td><td>All Res +15 (Armor/Helm), +22 (Shields)</td><td>Hell Countess, 2 Pul + Topaz</td></tr>
@@ -179,32 +180,204 @@
                     <tr><td class="rune">Zod</td><td>Indestructible</td><td>Indestructible</td><td>Hell drops, rare</td></tr>
                 </tbody>
             </table>
+            <h3>Countess Rune Drops</h3>
+            <p>The Countess in the Forgotten Tower (Black Marsh, Act 1) is a reliable source for runes. Always kill on /players1 in Single Player for maximum efficiency. Her rune drop limits are:</p>
+            <ul>
+                <li><strong>Normal</strong>: <span class="rune">El, Eld, Tir, Nef, Eth, Ith, Tal, Ral</span></li>
+                <li><strong>Nightmare</strong>: <span class="rune">Ort, Thul, Amn, Sol, Shael, Dol, Hel, Io</span> (Very rare: <span class="rune">Lum, Ko</span>)</li>
+                <li><strong>Hell</strong>: <span class="rune">Lum, Ko, Fal, Lem, Pul, Um, Mal, Ist</span> (Very rare: <span class="rune">Gul, Vex, Ohm, Lo</span>)</li>
+            </ul>
+            <h3>Hellforge Rune Drops</h3>
+            <p>The Hellforge quest in Act 4 can drop runes up to the following levels:</p>
+            <ul>
+                <li><strong>Normal</strong>: <span class="rune">El to Amn</span></li>
+                <li><strong>Nightmare</strong>: <span class="rune">Sol to Um</span></li>
+                <li><strong>Hell</strong>: <span class="rune">Hel to Gul</span></li>
+            </ul>
+            <h3>Farming High Runes</h3>
+            <p>The high runes (<span class="rune">Sur, Ber, Jah, Cham, Zod</span>) are best found farming areas like Lower Kurast, Arcane Sanctuary, Ancient Tunnels, or the Secret Cow Level in Hell difficulty by opening chests and killing mobs. Drop chances are extremely rare, so prioritize areas with high mob density for better odds.</p>
+        </details>
+
+        <!-- Runeword Bases Section -->
+        <details id="runeword-bases">
+            <summary>Runeword Bases</summary>
+            <h2>Runeword Bases</h2>
+            <p>Choosing the right base item for a runeword is critical for maximizing its effectiveness. Below are recommended bases for popular runewords, along with notes on where to find them.</p>
+            <h3>Weapon Bases</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Base Item</th>
+                        <th>Runeword</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>2os Wand</td><td class="runeword">White</td><td>+2-3 Bone Spear, shop from Drognan in Normal</td></tr>
+                    <tr><td>2os Staff</td><td class="runeword">Leaf</td><td>+2-3 Fire Ball, buy from Drognan in Act 2 Normal</td></tr>
+                    <tr><td>3os Phase Blade</td><td class="runeword">Lawbringer, Fury, Crescent Moon</td><td>Elite base, farm in Hell</td></tr>
+                    <tr><td>3os Runic Talons</td><td class="runeword">Chaos, Fury</td><td>Assassin claws, farm in Hell</td></tr>
+                    <tr><td>3os Flail</td><td class="runeword">Black</td><td>Shop from Fara in Normal</td></tr>
+                    <tr><td>4os Ethereal Berserker Axe, Cryptic Sword, or Silver-Edged Axe</td><td class="runeword">Oath</td><td>Secret Cow Level in Hell</td></tr>
+                    <tr><td>4os Phase Blade</td><td class="runeword">Voice of Reason</td><td>Elite base, farm in Hell</td></tr>
+                    <tr><td>4os Crystal Sword or Broad Sword</td><td class="runeword">Spirit</td><td>Cow Level in Normal, Larzuk quest</td></tr>
+                    <tr><td>4os Flail</td><td class="runeword">Heart of the Oak</td><td>Shop from Fara in Normal</td></tr>
+                    <tr><td>4os War Scepter</td><td class="runeword">Rift</td><td>Shop from Akara in Normal</td></tr>
+                    <tr><td>4os Ethereal Thresher, Great Poleaxe, or Cryptic Axe</td><td class="runeword">Insight, Infinity, Pride</td><td>Secret Cow Level in Hell</td></tr>
+                    <tr><td>4os Grand Matron Bow</td><td class="runeword">Faith, Brand, Harmony, Ice</td><td>+2-3 Bow Skills, farm in Hell</td></tr>
+                    <tr><td>4os Blade Bow or Great Bow</td><td class="runeword">Faith, Brand, Harmony, Ice</td><td>For Act 1 Mercenary, farm in Hell</td></tr>
+                    <tr><td>5os Phase Blade</td><td class="runeword">Grief, Death</td><td>Elite base, farm in Hell</td></tr>
+                    <tr><td>5os Flail or Crystal Sword</td><td class="runeword">Call to Arms</td><td>Shop from Fara in Normal</td></tr>
+                    <tr><td>5os Thresher or Giant Thresher</td><td class="runeword">Obedience</td><td>Ethereal for merc, farm in Hell</td></tr>
+                    <tr><td>5os Berserker Axe</td><td class="runeword">Grief, Beast, Doom, Death</td><td>Ethereal for Death, farm in Hell (Pit, Worldstone, Mausoleum, Maggot Lair for Berserker Axe)</td></tr>
+                    <tr><td>6os Phase Blade</td><td class="runeword">Last Wish</td><td>Elite base, farm in Hell</td></tr>
+                    <tr><td>6os Ethereal Berserker Axe, Colossus Blade, Hydra Bow, or Giant Thresher</td><td class="runeword">Breath of the Dying</td><td>Rare, farm in Hell</td></tr>
+                </tbody>
+            </table>
+            <h3>Armor Bases</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Base Item</th>
+                        <th>Runeword</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>3os Magic/Rare Druid Helm</td><td class="runeword">Dream, Delirium</td><td>+3 Tornado & +2 Druid Skills, farm in Hell</td></tr>
+                    <tr><td>3os Magic Tiara/Diadem</td><td class="runeword">Dream, Delirium</td><td>+Life or +Run/Walk for PvP, farm in Hell</td></tr>
+                    <tr><td>3os Demonhead or Bone Visage</td><td class="runeword">Dream, Delirium</td><td>Elite base, farm in Hell</td></tr>
+                    <tr><td>3os Archon Plate, Mage Plate, or Dusk Shroud</td><td class="runeword">Enigma, Duress, Dragon, Treachery</td><td>Ethereal for merc, low STR req, farm in Hell</td></tr>
+                    <tr><td>3os Hyperion, Monarch, or Blade Barrier</td><td class="runeword">Dream, Sanctuary, Dragon</td><td>Shop Monarch in Hell, farm others</td></tr>
+                    <tr><td>4os Monarch</td><td class="runeword">Spirit, Phoenix</td><td>Common in Hell, Larzuk quest for sockets</td></tr>
+                    <tr><td>4os Magic Jeweler’s Monarch of Deflecting (JMOD)</td><td class="runeword">Spirit, Phoenix</td><td>PvP, farm in Hell</td></tr>
+                    <tr><td>4os Sacred Rondache or Vortex Shield</td><td class="runeword">Exile, Phoenix</td><td>40+ All Res, Paladin shield, farm in Hell</td></tr>
+                    <tr><td>4os Archon Plate, Mage Plate, or Dusk Shroud</td><td class="runeword">Bramble, Chains of Honor, Fortitude</td><td>Ethereal elite armor for merc, farm in Hell</td></tr>
+                </tbody>
+            </table>
+            <h3>Notes on Bases</h3>
+            <ul>
+                <li>Elite bases are typically found in Hell difficulty, with the Secret Cow Level being the best spot for 99% of them (except Berserker Axe, which drops in Pit, Worldstone, Mausoleum, or Maggot Lair).</li>
+                <li>Many runewords can technically use various bases, but for 99% of them, only 1-2 bases are optimal. Sub-optimal bases are usually a waste.</li>
+                <li>Bases are significantly more valuable if they are Superior (with enhanced stats) and even more so with maximum rolls.</li>
+            </ul>
         </details>
 
         <!-- Runewords Section -->
         <details id="runewords">
             <summary>Runewords</summary>
             <h2>Runewords</h2>
-            <p>Runewords are powerful combinations of runes inserted into socketed items. Below is a list of popular runewords with their required runes, item types, effects, and recommended bases.</p>
+            <p>Runewords are powerful combinations of runes inserted into socketed items. Below is a list of popular runewords with their required runes, item types, and level requirements.</p>
             <h3>Creating Runewords</h3>
-            <p>To create a runeword, insert the runes in the exact order into a non-magical socketed item of the correct type. The item must have the exact number of sockets required by the runeword.</p>
+            <p>To create a runeword, insert the runes in the exact order into a non-magical (white or superior) socketed item of the correct type with the exact number of sockets required. Warnings:</p>
+            <ul>
+                <li><strong>Warning #1</strong>: Runewords cannot be made in magic, rare, set, or unique items with sockets.</li>
+                <li><strong>Warning #2</strong>: You cannot socket already socketed items. Using the Horadric Cube gives a 50% chance at max sockets.</li>
+                <li><strong>Warning #3</strong>: Double-check recipes to ensure correct rune order and item type (e.g., polearm runewords won’t work in spears).</li>
+            </ul>
+            <h3>Important Tips</h3>
+            <ul>
+                <li>Choose bases with low strength and dexterity requirements.</li>
+                <li>Larzuk quest always gives the maximum number of sockets for an item’s ilvl.</li>
+                <li>Buy bases with open sockets from vendors and reset them by leaving town via the main entrance, portal, or waypoint.</li>
+                <li>Use <span class="rune">Hel Rune</span> + TP scroll in the Horadric Cube to remove all items from sockets (runes/gems are destroyed).</li>
+            </ul>
+            <h3>Runeword List</h3>
             <table>
                 <thead>
                     <tr>
+                        <th>Lvl</th>
                         <th>Runeword</th>
                         <th>Runes</th>
                         <th>Item Type</th>
-                        <th>Effects</th>
-                        <th>Recommended Bases</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td class="runeword">Ancient's Pledge</td><td class="rune">Ral Ort Tal</td><td>3-socket Shields</td><td>+50% Enhanced Defense, Cold Resist +43%, Fire Resist +48%, Lightning Resist +48%, Poison Resist +48%, 10% Damage Taken Goes to Mana</td><td>Any 3-socket shield (e.g., Large Shield)</td></tr>
-                    <tr><td class="runeword">Spirit</td><td class="rune">Tal Thul Ort Amn</td><td>4-socket Swords/Shields</td><td>+2 To All Skills, +25-35% FCR, +55% FHR, +250 Def vs. Missile, +22 Vitality, +89-112 Mana</td><td>Swords: Broad Sword; Shields: Monarch</td></tr>
-                    <tr><td class="runeword">Insight</td><td class="rune">Ral Tir Tal Sol</td><td>4-socket Polearms/Staves</td><td>Level 12-17 Meditation Aura, +35% FCR, +200-260% Enhanced Damage, +9 Min Damage</td><td>Polearms: Thresher (for mercs)</td></tr>
-                    <tr><td class="runeword">Enigma</td><td class="rune">Jah Ith Ber</td><td>3-socket Armor</td><td>+2 To All Skills, +45% Faster Run/Walk, +1 To Teleport, +750-775 Defense, + (0.75 Per Level) Strength</td><td>Mage Plate, Dusk Shroud</td></tr>
-                    <tr><td class="runeword">Infinity</td><td class="rune">Ber Mal Ber Ist</td><td>4-socket Polearms</td><td>Level 12 Conviction Aura, +255-325% Enhanced Damage, -45-55% Enemy Lightning Resist</td><td>Ethereal Thresher (for mercs)</td></tr>
-                    <tr><td class="runeword">Call to Arms</td><td class="rune">Amn Ral Mal Ist Ohm</td><td>5-socket Weapons</td><td>+1 To All Skills, +40% IAS, +250-290% Enhanced Damage, +2-6 Battle Command</td><td>Crystal Sword, Flail</td></tr>
+                    <tr><td>13</td><td class="runeword">Nadir</td><td class="rune">Nef Tir</td><td>2os Helms</td></tr>
+                    <tr><td>13</td><td class="runeword">Steel</td><td class="rune">Tir El</td><td>2os Swords/Axes/Maces</td></tr>
+                    <tr><td>15</td><td class="runeword">Malice</td><td class="rune">Ith El Eth</td><td>3os Melee Weapons</td></tr>
+                    <tr><td>17</td><td class="runeword">Stealth</td><td class="rune">Tal Eth</td><td>2os Body Armor</td></tr>
+                    <tr><td>19</td><td class="runeword">Leaf</td><td class="rune">Tir Ral</td><td>2os Staves</td></tr>
+                    <tr><td>21</td><td class="runeword">Ancient's Pledge</td><td class="rune">Ral Ort Tal</td><td>3os Shields</td></tr>
+                    <tr><td>21</td><td class="runeword">Holy Thunder</td><td class="rune">Eth Ral Ort Tal</td><td>4os Scepters</td></tr>
+                    <tr><td>21</td><td class="runeword">Zephyr</td><td class="rune">Ort Eth</td><td>2os Missile Weapons</td></tr>
+                    <tr><td>23</td><td class="runeword">Pattern</td><td class="rune">Tal Ort Thul</td><td>3os Claws</td></tr>
+                    <tr><td>25</td><td class="runeword">King's Grace</td><td class="rune">Amn Ral Thul</td><td>3os Swords/Scepters</td></tr>
+                    <tr><td>25</td><td class="runeword">Edge</td><td class="rune">Tir Tal Amn</td><td>3os Missile Weapons</td></tr>
+                    <tr><td>25</td><td class="runeword">Spirit</td><td class="rune">Tal Thul Ort Amn</td><td>4os Swords (25) or Shields (54)</td></tr>
+                    <tr><td>25</td><td class="runeword">Myth</td><td class="rune">Hel Amn Nef</td><td>3os Body Armor</td></tr>
+                    <tr><td>25</td><td class="runeword">Strength</td><td class="rune">Amn Tir</td><td>2os Weapons</td></tr>
+                    <tr><td>27</td><td class="runeword">Insight</td><td class="rune">Ral Tir Tal Sol</td><td>4os Polearms/Staves/Missile Weapons</td></tr>
+                    <tr><td>27</td><td class="runeword">Honor</td><td class="rune">Amn El Ith Tir Sol</td><td>5os Melee Weapons</td></tr>
+                    <tr><td>27</td><td class="runeword">Lore</td><td class="rune">Ort Sol</td><td>2os Helms</td></tr>
+                    <tr><td>27</td><td class="runeword">Radiance</td><td class="rune">Nef Sol Ith</td><td>3os Helms</td></tr>
+                    <tr><td>29</td><td class="runeword">Peace</td><td class="rune">Shael Thul Amn</td><td>3os Body Armor</td></tr>
+                    <tr><td>29</td><td class="runeword">Rhyme</td><td class="rune">Shael Eth</td><td>2os Shields</td></tr>
+                    <tr><td>35</td><td class="runeword">Black</td><td class="rune">Thul Io Nef</td><td>3os Clubs/Hammers/Maces</td></tr>
+                    <tr><td>35</td><td class="runeword">White</td><td class="rune">Dol Io</td><td>2os Wands</td></tr>
+                    <tr><td>37</td><td class="runeword">Memory</td><td class="rune">Lum Io Sol Eth</td><td>4os Staves</td></tr>
+                    <tr><td>37</td><td class="runeword">Smoke</td><td class="rune">Nef Lum</td><td>2os Body Armor</td></tr>
+                    <tr><td>37</td><td class="runeword">Splendor</td><td class="rune">Eth Lum</td><td>2os Shields</td></tr>
+                    <tr><td>39</td><td class="runeword">Harmony</td><td class="rune">Tir Ith Sol Ko</td><td>4os Missile Weapons</td></tr>
+                    <tr><td>39</td><td class="runeword">Melody</td><td class="rune">Shael Ko Nef</td><td>3os Missile Weapons</td></tr>
+                    <tr><td>41</td><td class="runeword">Obedience</td><td class="rune">Hel Ko Thul Eth Fal</td><td>5os Polearms</td></tr>
+                    <tr><td>41</td><td class="runeword">Lionheart</td><td class="rune">Hel Lum Fal</td><td>3os Body Armor</td></tr>
+                    <tr><td>41</td><td class="runeword">Unbending Will</td><td class="rune">Fal Io Ith Eld El Hel</td><td>6os Swords</td></tr>
+                    <tr><td>43</td><td class="runeword">Lawbringer</td><td class="rune">Amn Lem Ko</td><td>3os Swords/Hammers/Scepters</td></tr>
+                    <tr><td>43</td><td class="runeword">Voice of Reason</td><td class="rune">Lem Ko El Eld</td><td>4os Swords/Maces</td></tr>
+                    <tr><td>43</td><td class="runeword">Passion</td><td class="rune">Dol Ort Eld Lem</td><td>4os Weapons</td></tr>
+                    <tr><td>43</td><td class="runeword">Wealth</td><td class="rune">Lem Ko Tir</td><td>3os Body Armor</td></tr>
+                    <tr><td>43</td><td class="runeword">Treachery</td><td class="rune">Shael Thul Lem</td><td>3os Body Armor</td></tr>
+                    <tr><td>45</td><td class="runeword">Wisdom</td><td class="rune">Pul Ith Eld</td><td>3os Helms</td></tr>
+                    <tr><td>45</td><td class="runeword">Enlightenment</td><td class="rune">Pul Ral Sol</td><td>3os Body Armor</td></tr>
+                    <tr><td>47</td><td class="runeword">Bone</td><td class="rune">Sol Um Um</td><td>3os Body Armor</td></tr>
+                    <tr><td>47</td><td class="runeword">Crescent Moon</td><td class="rune">Shael Um Tir</td><td>3os Axes/Swords/Polearms</td></tr>
+                    <tr><td>47</td><td class="runeword">Duress</td><td class="rune">Shael Um Thul</td><td>3os Body Armor</td></tr>
+                    <tr><td>47</td><td class="runeword">Gloom</td><td class="rune">Fal Um Pul</td><td>3os Body Armor</td></tr>
+                    <tr><td>47</td><td class="runeword">Stone</td><td class="rune">Shael Um Pul Lum</td><td>4os Body Armor</td></tr>
+                    <tr><td>49</td><td class="runeword">Oath</td><td class="rune">Shael Pul Mal Lum</td><td>4os Swords/Axes/Maces</td></tr>
+                    <tr><td>49</td><td class="runeword">Prudence</td><td class="rune">Mal Tir</td><td>2os Body Armor</td></tr>
+                    <tr><td>49</td><td class="runeword">Rain</td><td class="rune">Ort Mal Ith</td><td>3os Body Armor</td></tr>
+                    <tr><td>49</td><td class="runeword">Sanctuary</td><td class="rune">Ko Ko Mal</td><td>3os Shields</td></tr>
+                    <tr><td>49</td><td class="runeword">Venom</td><td class="rune">Tal Dol Mal</td><td>3os Weapons</td></tr>
+                    <tr><td>51</td><td class="runeword">Delirium</td><td class="rune">Lem Ist Io</td><td>3os Helms</td></tr>
+                    <tr><td>53</td><td class="runeword">Rift</td><td class="rune">Hel Ko Lem Gul</td><td>4os Polearms/Scepters</td></tr>
+                    <tr><td>53</td><td class="runeword">Kingslayer</td><td class="rune">Mal Um Gul Fal</td><td>4os Swords/Axes</td></tr>
+                    <tr><td>53</td><td class="runeword">Principle</td><td class="rune">Ral Gul Eld</td><td>3os Body Armor</td></tr>
+                    <tr><td>55</td><td class="runeword">Death</td><td class="rune">Hel El Vex Ort Gul</td><td>5os Swords/Axes</td></tr>
+                    <tr><td>55</td><td class="runeword">Flickering Flame</td><td class="rune">Nef Pul Vex</td><td>3os Helms</td></tr>
+                    <tr><td>55</td><td class="runeword">Heart of the Oak</td><td class="rune">Ko Vex Pul Thul</td><td>4os Staves/Maces</td></tr>
+                    <tr><td>55</td><td class="runeword">Silence</td><td class="rune">Dol Eld Hel Ist Tir Vex</td><td>6os Weapons</td></tr>
+                    <tr><td>57</td><td class="runeword">Call to Arms</td><td class="rune">Amn Ral Mal Ist Ohm</td><td>5os Weapons</td></tr>
+                    <tr><td>57</td><td class="runeword">Chaos</td><td class="rune">Fal Ohm Um</td><td>3os Claws</td></tr>
+                    <tr><td>57</td><td class="runeword">Exile</td><td class="rune">Vex Ohm Ist Dol</td><td>4os Paladin Shields</td></tr>
+                    <tr><td>59</td><td class="runeword">Fortitude</td><td class="rune">El Sol Dol Lo</td><td>4os Weapons/Body Armor</td></tr>
+                    <tr><td>59</td><td class="runeword">Grief</td><td class="rune">Eth Tir Lo Mal Ral</td><td>5os Swords/Axes</td></tr>
+                    <tr><td>61</td><td class="runeword">Dragon</td><td class="rune">Sur Lo Sol</td><td>3os Body Armor/Shields</td></tr>
+                    <tr><td>61</td><td class="runeword">Bramble</td><td class="rune">Ral Ohm Sur Eth</td><td>4os Body Armor</td></tr>
+                    <tr><td>61</td><td class="runeword">Wind</td><td class="rune">Sur El</td><td>2os Melee Weapons</td></tr>
+                    <tr><td>63</td><td class="runeword">Infinity</td><td class="rune">Ber Mal Ber Ist</td><td>4os Polearms</td></tr>
+                    <tr><td>63</td><td class="runeword">Wrath</td><td class="rune">Pul Lum Ber Mal</td><td>4os Missile Weapons</td></tr>
+                    <tr><td>63</td><td class="runeword">Beast</td><td class="rune">Ber Tir Um Mal Lum</td><td>5os Axes/Scepters/Hammers</td></tr>
+                    <tr><td>63</td><td class="runeword">Chains of Honor</td><td class="rune">Dol Um Ber Ist</td><td>4os Body Armor</td></tr>
+                    <tr><td>63</td><td class="runeword">Eternity</td><td class="rune">Amn Ber Ist Sol Sur</td><td>5os Melee Weapons</td></tr>
+                    <tr><td>65</td><td class="runeword">Brand</td><td class="rune">Jah Lo Mal Gul</td><td>4os Missile Weapons</td></tr>
+                    <tr><td>65</td><td class="runeword">Destruction</td><td class="rune">Vex Lo Ber Jah Ko</td><td>5os Polearms/Swords</td></tr>
+                    <tr><td>65</td><td class="runeword">Dream</td><td class="rune">Io Jah Pul</td><td>3os Helms/Shields</td></tr>
+                    <tr><td>65</td><td class="runeword">Faith</td><td class="rune">Ohm Jah Lem Eld</td><td>4os Missile Weapons</td></tr>
+                    <tr><td>65</td><td class="runeword">Ice</td><td class="rune">Amn Shael Jah Lo</td><td>4os Missile Weapons</td></tr>
+                    <tr><td>65</td><td class="runeword">Last Wish</td><td class="rune">Jah Mal Jah Sur Jah Ber</td><td>6os Swords/Hammers/Axes</td></tr>
+                    <tr><td>65</td><td class="runeword">Phoenix</td><td class="rune">Vex Vex Lo Jah</td><td>4os Weapons/Shields</td></tr>
+                    <tr><td>65</td><td class="runeword">Enigma</td><td class="rune">Jah Ith Ber</td><td>3os Body Armor</td></tr>
+                    <tr><td>65</td><td class="runeword">Famine</td><td class="rune">Fal Ohm Ort Jah</td><td>4os Axes/Hammers</td></tr>
+                    <tr><td>65</td><td class="runeword">Fury</td><td class="rune">Jah Gul Eth</td><td>3os Melee Weapons</td></tr>
+                    <tr><td>67</td><td class="runeword">Pride</td><td class="rune">Cham Sur Io Lo</td><td>4os Polearms</td></tr>
+                    <tr><td>67</td><td class="runeword">Doom</td><td class="rune">Hel Ohm Um Lo Cham</td><td>5os Axes/Polearms/Hammers</td></tr>
+                    <tr><td>67</td><td class="runeword">Hand of Justice</td><td class="rune">Sur Cham Amn Lo</td><td>4os Weapons</td></tr>
+                    <tr><td>67</td><td class="runeword">Plague</td><td class="rune">Cham Fal Um</td><td>3os Weapons</td></tr>
+                    <tr><td>67</td><td class="runeword">Mist</td><td class="rune">Cham Shael Gul Thul Ith</td><td>5os Bows</td></tr>
+                    <tr><td>69</td><td class="runeword">Obsession</td><td class="rune">Zod Ist Lem Lum Io Nef</td><td>6os Staves</td></tr>
+                    <tr><td>69</td><td class="runeword">Breath of the Dying</td><td class="rune">Vex Hel El Eld Zod Eth</td><td>6os Weapons</td></tr>
                 </tbody>
             </table>
         </details>
@@ -260,24 +433,141 @@
         <details id="breakpoints">
             <summary>Stat Breakpoints</summary>
             <h2>Stat Breakpoints</h2>
-            <p>Faster Cast Rate (FCR) and Faster Hit Recovery (FHR) breakpoints optimize performance. Here’s an example for the Sorceress.</p>
+            <p>Faster Cast Rate (FCR), Faster Hit Recovery (FHR), and Faster Block Rate (FBR) breakpoints are crucial for optimizing character performance. Below are the breakpoints for each class.</p>
+            <h3>Amazon</h3>
+            <table>
+                <thead><tr><th>FHR %</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>11</td></tr><tr><td>6%</td><td>10</td></tr><tr><td>13%</td><td>9</td></tr><tr><td>20%</td><td>8</td></tr><tr><td>32%</td><td>7</td></tr><tr><td>52%</td><td>6</td></tr><tr><td>86%</td><td>5</td></tr><tr><td>174%</td><td>4</td></tr><tr><td>600%</td><td>3</td></tr></tbody>
+            </table>
+            <table>
+                <thead><tr><th>FCR %</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>19</td></tr><tr><td>7%</td><td>18</td></tr><tr><td>14%</td><td>17</td></tr><tr><td>22%</td><td>16</td></tr><tr><td>32%</td><td>15</td></tr><tr><td>48%</td><td>14</td></tr><tr><td>68%</td><td>13</td></tr><tr><td>99%</td><td>12</td></tr><tr><td>152%</td><td>11</td></tr></tbody>
+            </table>
+            <table>
+                <thead><tr><th>FBR % (1H or 2H Sword in 1H)</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>17</td></tr><tr><td>4%</td><td>16</td></tr><tr><td>6%</td><td>15</td></tr><tr><td>11%</td><td>14</td></tr><tr><td>15%</td><td>13</td></tr><tr><td>23%</td><td>12</td></tr><tr><td>29%</td><td>11</td></tr><tr><td>40%</td><td>10</td></tr><tr><td>56%</td><td>9</td></tr><tr><td>80%</td><td>8</td></tr><tr><td>120%</td><td>7</td></tr><tr><td>200%</td><td>6</td></tr><tr><td>480%</td><td>5</td></tr></tbody>
+            </table>
+            <table>
+                <thead><tr><th>FBR % (Other Weapons)</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>5</td></tr><tr><td>13%</td><td>4</td></tr><tr><td>32%</td><td>3</td></tr><tr><td>86%</td><td>2</td></tr><tr><td>600%</td><td>1</td></tr></tbody>
+            </table>
+            <h3>Assassin</h3>
+            <table>
+                <thead><tr><th>FHR %</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>9</td></tr><tr><td>7%</td><td>8</td></tr><tr><td>15%</td><td>7</td></tr><tr><td>27%</td><td>6</td></tr><tr><td>48%</td><td>5</td></tr><tr><td>86%</td><td>4</td></tr><tr><td>200%</td><td>3</td></tr><tr><td>4680%</td><td>2</td></tr></tbody>
+            </table>
+            <table>
+                <thead><tr><th>FCR %</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>16</td></tr><tr><td>8%</td><td>15</td></tr><tr><td>16%</td><td>14</td></tr><tr><td>27%</td><td>13</td></tr><tr><td>42%</td><td>12</td></tr><tr><td>65%</td><td>11</td></tr><tr><td>102%</td><td>10</td></tr><tr><td>174%</td><td>9</td></tr></tbody>
+            </table>
+            <table>
+                <thead><tr><th>FBR %</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>5</td></tr><tr><td>13%</td><td>4</td></tr><tr><td>32%</td><td>3</td></tr><tr><td>86%</td><td>2</td></tr><tr><td>600%</td><td>1</td></tr></tbody>
+            </table>
+            <h3>Barbarian</h3>
+            <table>
+                <thead><tr><th>FHR %</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>9</td></tr><tr><td>7%</td><td>8</td></tr><tr><td>15%</td><td>7</td></tr><tr><td>27%</td><td>6</td></tr><tr><td>48%</td><td>5</td></tr><tr><td>86%</td><td>4</td></tr><tr><td>200%</td><td>3</td></tr><tr><td>4680%</td><td>2</td></tr></tbody>
+            </table>
+            <table>
+                <thead><tr><th>FCR %</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>13</td></tr><tr><td>9%</td><td>12</td></tr><tr><td>20%</td><td>11</td></tr><tr><td>37%</td><td>10</td></tr><tr><td>63%</td><td>9</td></tr><tr><td>105%</td><td>8</td></tr><tr><td>200%</td><td>7</td></tr></tbody>
+            </table>
+            <table>
+                <thead><tr><th>FBR %</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>7</td></tr><tr><td>9%</td><td>6</td></tr><tr><td>20%</td><td>5</td></tr><tr><td>42%</td><td>4</td></tr><tr><td>86%</td><td>3</td></tr><tr><td>280%</td><td>2</td></tr></tbody>
+            </table>
+            <h3>Druid</h3>
+            <table>
+                <thead><tr><th>FHR % (Human, 1H or 2H Sword in 1H)</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>14</td></tr><tr><td>3%</td><td>13</td></tr><tr><td>7%</td><td>12</td></tr><tr><td>13%</td><td>11</td></tr><tr><td>19%</td><td>10</td></tr><tr><td>29%</td><td>9</td></tr><tr><td>42%</td><td>8</td></tr><tr><td>63%</td><td>7</td></tr><tr><td>99%</td><td>6</td></tr><tr><td>174%</td><td>5</td></tr><tr><td>456%</td><td>4</td></tr></tbody>
+            </table>
+            <table>
+                <thead><tr><th>FHR % (Human, Other Weapons)</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>13</td></tr><tr><td>5%</td><td>12</td></tr><tr><td>10%</td><td>11</td></tr><tr><td>16%</td><td>10</td></tr><tr><td>26%</td><td>9</td></tr><tr><td>39%</td><td>8</td></tr><tr><td>56%</td><td>7</td></tr><tr><td>86%</td><td>6</td></tr><tr><td>152%</td><td>5</td></tr><tr><td>377%</td><td>4</td></tr></tbody>
+            </table>
+            <table>
+                <thead><tr><th>FHR % (Wolf)</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>7</td></tr><tr><td>9%</td><td>6</td></tr><tr><td>20%</td><td>5</td></tr><tr><td>42%</td><td>4</td></tr><tr><td>86%</td><td>3</td></tr><tr><td>280%</td><td>2</td></tr></tbody>
+            </table>
+            <table>
+                <thead><tr><th>FHR % (Bear)</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>13</td></tr><tr><td>5%</td><td>12</td></tr><tr><td>10%</td><td>11</td></tr><tr><td>16%</td><td>10</td></tr><tr><td>24%</td><td>9</td></tr><tr><td>37%</td><td>8</td></tr><tr><td>54%</td><td>7</td></tr><tr><td>86%</td><td>6</td></tr><tr><td>152%</td><td>5</td></tr><tr><td>360%</td><td>4</td></tr></tbody>
+            </table>
+            <table>
+                <thead><tr><th>FCR % (Human)</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>18</td></tr><tr><td>4%</td><td>17</td></tr><tr><td>10%</td><td>16</td></tr><tr><td>19%</td><td>15</td></tr><tr><td>30%</td><td>14</td></tr><tr><td>46%</td><td>13</td></tr><tr><td>68%</td><td>12</td></tr><tr><td>99%</td><td>11</td></tr><tr><td>163%</td><td>10</td></tr></tbody>
+            </table>
+            <table>
+                <thead><tr><th>FCR % (Wolf)</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>16</td></tr><tr><td>6%</td><td>15</td></tr><tr><td>14%</td><td>14</td></tr><tr><td>26%</td><td>13</td></tr><tr><td>40%</td><td>12</td></tr><tr><td>60%</td><td>11</td></tr><tr><td>95%</td><td>10</td></tr><tr><td>157%</td><td>9</td></tr></tbody>
+            </table>
+            <table>
+                <thead><tr><th>FCR % (Bear)</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>16</td></tr><tr><td>7%</td><td>15</td></tr><tr><td>15%</td><td>14</td></tr><tr><td>26%</td><td>13</td></tr><tr><td>40%</td><td>12</td></tr><tr><td>63%</td><td>11</td></tr><tr><td>99%</td><td>10</td></tr><tr><td>163%</td><td>9</td></tr></tbody>
+            </table>
+            <table>
+                <thead><tr><th>FBR % (Human)</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>11</td></tr><tr><td>6%</td><td>10</td></tr><tr><td>13%</td><td>9</td></tr><tr><td>20%</td><td>8</td></tr><tr><td>32%</td><td>7</td></tr><tr><td>52%</td><td>6</td></tr><tr><td>86%</td><td>5</td></tr><tr><td>174%</td><td>4</td></tr><tr><td>600%</td><td>3</td></tr></tbody>
+            </table>
+            <table>
+                <thead><tr><th>FBR % (Wolf)</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>9</td></tr><tr><td>7%</td><td>8</td></tr><tr><td>15%</td><td>7</td></tr><tr><td>27%</td><td>6</td></tr><tr><td>48%</td><td>5</td></tr><tr><td>86%</td><td>4</td></tr><tr><td>200%</td><td>3</td></tr></tbody>
+            </table>
+            <table>
+                <thead><tr><th>FBR % (Bear)</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>12</td></tr><tr><td>5%</td><td>11</td></tr><tr><td>10%</td><td>10</td></tr><tr><td>16%</td><td>9</td></tr><tr><td>27%</td><td>8</td></tr><tr><td>40%</td><td>7</td></tr><tr><td>65%</td><td>6</td></tr><tr><td>109%</td><td>5</td></tr><tr><td>223%</td><td>4</td></tr></tbody>
+            </table>
+            <h3>Necromancer</h3>
+            <table>
+                <thead><tr><th>FHR %</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>13</td></tr><tr><td>5%</td><td>12</td></tr><tr><td>10%</td><td>11</td></tr><tr><td>16%</td><td>10</td></tr><tr><td>26%</td><td>9</td></tr><tr><td>39%</td><td>8</td></tr><tr><td>56%</td><td>7</td></tr><tr><td>86%</td><td>6</td></tr><tr><td>152%</td><td>5</td></tr><tr><td>377%</td><td>4</td></tr></tbody>
+            </table>
+            <table>
+                <thead><tr><th>FCR % (Human)</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>15</td></tr><tr><td>9%</td><td>14</td></tr><tr><td>18%</td><td>13</td></tr><tr><td>30%</td><td>12</td></tr><tr><td>48%</td><td>11</td></tr><tr><td>75%</td><td>10</td></tr><tr><td>125%</td><td>9</td></tr></tbody>
+            </table>
+            <table>
+                <thead><tr><th>FCR % (Vampire)</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>23</td></tr><tr><td>6%</td><td>22</td></tr><tr><td>11%</td><td>21</td></tr><tr><td>18%</td><td>20</td></tr><tr><td>24%</td><td>19</td></tr><tr><td>35%</td><td>18</td></tr><tr><td>48%</td><td>17</td></tr><tr><td>65%</td><td>16</td></tr><tr><td>86%</td><td>15</td></tr><tr><td>120%</td><td>14</td></tr><tr><td>180%</td><td>13</td></tr></tbody>
+            </table>
+            <table>
+                <thead><tr><th>FBR %</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>11</td></tr><tr><td>6%</td><td>10</td></tr><tr><td>13%</td><td>9</td></tr><tr><td>20%</td><td>8</td></tr><tr><td>32%</td><td>7</td></tr><tr><td>52%</td><td>6</td></tr><tr><td>86%</td><td>5</td></tr><tr><td>174%</td><td>4</td></tr><tr><td>600%</td><td>3</td></tr></tbody>
+            </table>
+            <h3>Paladin</h3>
+            <table>
+                <thead><tr><th>FHR %</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>9</td></tr><tr><td>7%</td><td>8</td></tr><tr><td>15%</td><td>7</td></tr><tr><td>27%</td><td>6</td></tr><tr><td>48%</td><td>5</td></tr><tr><td>86%</td><td>4</td></tr><tr><td>200%</td><td>3</td></tr><tr><td>4680%</td><td>2</td></tr></tbody>
+            </table>
+            <table>
+                <thead><tr><th>FCR %</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>15</td></tr><tr><td>9%</td><td>14</td></tr><tr><td>18%</td><td>13</td></tr><tr><td>30%</td><td>12</td></tr><tr><td>48%</td><td>11</td></tr><tr><td>75%</td><td>10</td></tr><tr><td>125%</td><td>9</td></tr></tbody>
+            </table>
+            <table>
+                <thead><tr><th>FBR % (With Holy Shield)</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>2</td></tr><tr><td>86%</td><td>1</td></tr></tbody>
+            </table>
+            <table>
+                <thead><tr><th>FBR % (Without Holy Shield)</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>5</td></tr><tr><td>13%</td><td>4</td></tr><tr><td>32%</td><td>3</td></tr><tr><td>86%</td><td>2</td></tr><tr><td>600%</td><td>1</td></tr></tbody>
+            </table>
             <h3>Sorceress</h3>
             <table>
-                <thead>
-                    <tr>
-                        <th>FCR %</th>
-                        <th>Frames</th>
-                        <th>FHR %</th>
-                        <th>Frames</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>0</td><td>13</td><td>0</td><td>15</td></tr>
-                    <tr><td>9</td><td>12</td><td>5</td><td>14</td></tr>
-                    <tr><td>20</td><td>11</td><td>9</td><td>13</td></tr>
-                    <tr><td>37</td><td>10</td><td>14</td><td>12</td></tr>
-                    <tr><td>63</td><td>9</td><td>20</td><td>11</td></tr>
-                </tbody>
+                <thead><tr><th>FHR %</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>15</td></tr><tr><td>5%</td><td>14</td></tr><tr><td>9%</td><td>13</td></tr><tr><td>14%</td><td>12</td></tr><tr><td>20%</td><td>11</td></tr><tr><td>30%</td><td>10</td></tr><tr><td>42%</td><td>9</td></tr><tr><td>60%</td><td>8</td></tr><tr><td>86%</td><td>7</td></tr><tr><td>142%</td><td>6</td></tr><tr><td>280%</td><td>5</td></tr><tr><td>1480%</td><td>4</td></tr></tbody>
+            </table>
+            <table>
+                <thead><tr><th>FCR % (Most Spells)</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>13</td></tr><tr><td>9%</td><td>12</td></tr><tr><td>20%</td><td>11</td></tr><tr><td>37%</td><td>10</td></tr><tr><td>63%</td><td>9</td></tr><tr><td>105%</td><td>8</td></tr><tr><td>200%</td><td>7</td></tr></tbody>
+            </table>
+            <table>
+                <thead><tr><th>FCR % (Lightning/Chain Lightning)</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>19</td></tr><tr><td>7%</td><td>18</td></tr><tr><td>15%</td><td>17</td></tr><tr><td>23%</td><td>16</td></tr><tr><td>35%</td><td>15</td></tr><tr><td>52%</td><td>14</td></tr><tr><td>78%</td><td>13</td></tr><tr><td>117%</td><td>12</td></tr><tr><td>194%</td><td>11</td></tr></tbody>
+            </table>
+            <table>
+                <thead><tr><th>FBR %</th><th>Frames</th></tr></thead>
+                <tbody><tr><td>0%</td><td>9</td></tr><tr><td>7%</td><td>8</td></tr><tr><td>15%</td><td>7</td></tr><tr><td>27%</td><td>6</td></tr><tr><td>48%</td><td>5</td></tr><tr><td>86%</td><td>4</td></tr><tr><td>200%</td><td>3</td></tr><tr><td>4680%</td><td>2</td></tr></tbody>
             </table>
         </details>
 
@@ -285,18 +575,22 @@
         <details id="crafting">
             <summary>Crafting</summary>
             <h2>Crafting</h2>
-            <p>Craft items using the Horadric Cube. Item level (ilvl) is half your character level plus half the base item’s level.</p>
-            <h3>Blood Crafts</h3>
+            <p>Crafting allows players to create items with specific properties using the Horadric Cube. The item level (ilvl) of the crafted item is determined by half your character level plus half the base item’s level.</p>
+            <h3>Valuable Crafting Recipes</h3>
             <table>
                 <thead>
                     <tr>
-                        <th class="crafting-item">Item Type</th>
-                        <th class="crafting-ingredients">Ingredients</th>
-                        <th>Fixed Affixes</th>
+                        <th>Recipe</th>
+                        <th>Ingredients</th>
+                        <th>Preset Mods</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td class="crafting-item">Blood Gloves</td><td class="crafting-ingredients">Magic Heavy Gloves + Jewel + Nef Rune + Perfect Ruby</td><td>5-10% Crushing Blow, 1-3% Life Steal, +10-20 Life</td></tr>
+                    <tr><td>Blood Gloves</td><td><span class="crafting-item">Magical Heavy Gloves, Sharkskin Gloves, or Vampirebone Gloves</span> + <span class="crafting-ingredients">Jewel + Nef Rune + Perfect Ruby</span></td><td>1-3% Life Leech, +10-20 Hit Points, 5-10% Crushing Blow</td></tr>
+                    <tr><td>Blood Amulet</td><td><span class="crafting-item">Magical Amulet</span> + <span class="crafting-ingredients">Jewel + Amn Rune + Perfect Ruby</span></td><td>1-4% Life Steal, +10-20 Hit Points, 5-10% Faster Walk/Run</td></tr>
+                    <tr><td>Blood Ring</td><td><span class="crafting-item">Magical Ring</span> + <span class="crafting-ingredients">Jewel + Sol Rune + Perfect Ruby</span></td><td>1-3% Life Leech, +10-20 Hit Points, +1-5 Strength</td></tr>
+                    <tr><td>Caster Amulet</td><td><span class="crafting-item">Magical Amulet</span> + <span class="crafting-ingredients">Jewel + Ral Rune + Perfect Amethyst</span></td><td>4-10% Regenerate Mana, +10-20 Mana, 5-10% Faster Cast Rate</td></tr>
+                    <tr><td>Caster Ring</td><td><span class="crafting-item">Magical Ring</span> + <span class="crafting-ingredients">Jewel + Amn Rune + Perfect Amethyst</span></td><td>4-10% Regenerate Mana, +10-20 Mana, +1-5 Energy</td></tr>
                 </tbody>
             </table>
         </details>
@@ -305,19 +599,110 @@
         <details id="shopping">
             <summary>Shopping Guide</summary>
             <h2>Shopping Guide</h2>
-            <p>Vendors sell useful items for early game or specific builds.</p>
-            <h3>Weapons</h3>
+            <p>Shopping from vendors can yield valuable items and bases for your character. Below are detailed mechanics, tips, and specific items to look for.</p>
+            <h3>Basic Facts about Shopping</h3>
+            <ul>
+                <li><strong>Terms</strong>: ilvl (item level), clvl (character level), alvl (affix level), qlvl (quality level).</li>
+                <li>You cannot shop Ethereal items directly.</li>
+                <li>The ilvl of items is clvl + 5 (e.g., clvl 10 = ilvl 15).</li>
+                <li><strong>Normal Difficulty Caps</strong>:
+                    <ul>
+                        <li>Act 1: ilvl 12</li>
+                        <li>Act 2: ilvl 20</li>
+                        <li>Act 3: ilvl 25</li>
+                        <li>Act 4: ilvl 36</li>
+                        <li>Act 5: ilvl 45</li>
+                    </ul>
+                </li>
+                <li>Vendors sell normal/socketed items up to ilvl 25 (clvl 20+). Beyond ilvl 25, only magic items are sold.</li>
+                <li>If another player is in town, the shopping window won’t update when resetting.</li>
+                <li>Item affixes depend on qlvl and ilvl. Use <a href="https://diablo3.ingame.de/diablodb/affix_index.php?lang=en&version=lod&patch=111">this calculator</a> for details.</li>
+                <li>From Nightmare, exceptional items can appear; from Act 3 Hell, elite items can spawn. Use <a href="https://web.archive.org/web/20170503170454/http://members.iinet.net.au/~dcarson/shopcalc.html">this shopping calculator</a> for specifics.</li>
+                <li>Vendors have “Nightmare/Hell upgrade” tags, replacing some normal items with exceptional/elite versions in higher difficulties.</li>
+                <li>Items only appear if their qlvl ≤ ilvl (e.g., Ring Mail, qlvl 11, requires clvl 6+ from Charsi in Normal).</li>
+            </ul>
+            <h3>How to Shop</h3>
+            <ul>
+                <li>Reset vendors by leaving town via main entrance, waypoint, portal, or sewer in Act 2.</li>
+                <li>In Act 1 and 5, use Cow Level or mini-uber portals near the NPC for quick resets.</li>
+                <li>In Acts 1 and 2, restart the game to adjust town entrance layout for faster resets (Cow portal is fastest in Act 1).</li>
+            </ul>
+            <h3>Shopping for Bases</h3>
+            <p>Many runeword bases can be purchased from vendors in Normal. When an item is gray, it can be socketed, Superior, and/or Ethereal.</p>
             <table>
                 <thead>
                     <tr>
-                        <th class="shopping-item">Item Type</th>
-                        <th class="shopping-stats">Desired Stats</th>
-                        <th>Vendor & Location</th>
+                        <th>Base Item</th>
+                        <th>Vendor</th>
+                        <th>Difficulty</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td class="shopping-item">Wand of Life Tap</td><td class="shopping-stats">Life Tap</td><td>Malah (Hell)</td></tr>
-                    <tr><td class="shopping-item">+3 Skill Tree Weapons</td><td class="shopping-stats">+3 to [Skill Tree]</td><td>Drognan (Nightmare)</td></tr>
+                    <tr><td><span class="shopping-item">2os Staffs & Scepters</span></td><td>Akara (Normal)</td><td>Normal</td></tr>
+                    <tr><td><span class="shopping-item">2os Staff (+2-3 Fire Ball)</span></td><td>Drognan (Normal)</td><td>Normal</td></tr>
+                    <tr><td><span class="shopping-item">2-3os Bows, Polearms, Axes, 2os Scimitars & Katars</span></td><td>Charsi (Normal)</td><td>Normal</td></tr>
+                    <tr><td><span class="shopping-item">2-3os Shields, Armors, Polearms, 2os Helms</span></td><td>Fara (Normal)</td><td>Normal</td></tr>
+                    <tr><td><span class="shopping-item">4os Crystal/Broad Swords, 4os Polearms</span></td><td>Cow Level (Normal)</td><td>Normal</td></tr>
+                    <tr><td><span class="shopping-item">4-5os Exceptional Polearms</span></td><td>Cow Level (Nightmare)</td><td>Nightmare</td></tr>
+                    <tr><td><span class="shopping-item">4-5os Elite Polearms, 4os Monarch</span></td><td>Cow Level (Hell)</td><td>Hell</td></tr>
+                </tbody>
+            </table>
+            <h3>Valuable End-Game Items to Shop</h3>
+            <p><strong>*</strong> = Lowest clvl for affix; <strong>***</strong> = Recommended clvl; <strong>****</strong> = Highest breakpoint for affix.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item Type</th>
+                        <th>Desired Stats</th>
+                        <th>Vendor</th>
+                        <th>clvl</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><span class="shopping-item">Weapon of Life Tap (Wand/Dagger)</span></td><td><span class="shopping-stats">Life Tap</span></td><td>Malah Hell, Drognan Hell</td><td>19*, 78***, 91****</td></tr>
+                    <tr><td><span class="shopping-item">Weapon of Lower Resist (Wand/Dagger)</span></td><td><span class="shopping-stats">Lower Resist</span></td><td>Malah Hell, Drognan Hell</td><td>30*, 71***, 94****</td></tr>
+                    <tr><td><span class="shopping-item">Weapon of Poison Dagger (Dagger)</span></td><td><span class="shopping-stats">Poison Dagger</span></td><td>Malah Hell, Drognan Hell</td><td>7*, 78***, 89****</td></tr>
+                    <tr><td><span class="shopping-item">Weapon of Weaken (Wand/Dagger)</span></td><td><span class="shopping-stats">Weaken</span></td><td>Malah Hell, Drognan Hell</td><td>7*, 78***, 89****</td></tr>
+                    <tr><td><span class="shopping-item">Weapon of Confusion (Wand/Dagger)</span></td><td><span class="shopping-stats">Confusion</span></td><td>Malah Hell, Drognan Hell</td><td>19*, 78***, 91****</td></tr>
+                    <tr><td><span class="shopping-item">Weapon of Telekinesis (Staff/Scepter)</span></td><td><span class="shopping-stats">Telekinesis</span></td><td>Drognan Hell</td><td>19*, 78***, 89****</td></tr>
+                    <tr><td><span class="shopping-item">Weapon of Teleportation (Staff)</span></td><td><span class="shopping-stats">Teleportation</span></td><td>Drognan Hell</td><td>19*, 78***, 91****</td></tr>
+                    <tr><td><span class="shopping-item">Edge Runeword Base (Bow/Crossbow)</span></td><td><span class="shopping-stats">3os</span></td><td>Charsi Normal</td><td>1*</td></tr>
+                    <tr><td><span class="shopping-item">Black Runeword Base (Mace/Flail)</span></td><td><span class="shopping-stats">3os</span></td><td>Fara Normal</td><td>1*</td></tr>
+                    <tr><td><span class="shopping-item">Leaf Runeword Base (Staff)</span></td><td><span class="shopping-stats">+3 Fire Bolt/Fireball/Enflame</span></td><td>Drognan Normal, Akara Normal</td><td>1-13*</td></tr>
+                    <tr><td><span class="shopping-item">Blood Weapon (Military Pick)</span></td><td><span class="shopping-stats">Crafting Base</span></td><td>Gheed Nightmare</td><td>54*, 70***</td></tr>
+                    <tr><td><span class="shopping-item">Belt (Any)</span></td><td><span class="shopping-stats">+20 Mana or +30 Resist, +100 Life</span></td><td>Elsix Nightmare</td><td>65***</td></tr>
+                    <tr><td><span class="shopping-item">Caster Belt Base (Light/Sharkskin Belt)</span></td><td><span class="shopping-stats">Crafting Base</span></td><td>Elsix Nightmare</td><td>20*, 72*** (Light), 83*** (Sharkskin)</td></tr>
+                    <tr><td><span class="shopping-item">Blood Gloves Base (Heavy/Sharkskin Gloves)</span></td><td><span class="shopping-stats">Crafting Base</span></td><td>Charsi Nightmare (Heavy), Gheed Nightmare (Sharkskin)</td><td>20*, 69-72*** (Heavy), 76-77*** (Sharkskin)</td></tr>
+                    <tr><td><span class="shopping-item">Hitpower Gloves Base (Chain Gloves/Heavy Bracers)</span></td><td><span class="shopping-stats">Crafting Base</span></td><td>Gheed Nightmare (Chain), Fara Nightmare (Bracers)</td><td>20*, 69-71*** (Chain), 77-78*** (Bracers)</td></tr>
+                    <tr><td><span class="shopping-item">Cunning Claws of Quickness</span></td><td><span class="shopping-stats">+3 Traps, +40 IAS</span></td><td>Anya Hell</td><td>75***</td></tr>
+                    <tr><td><span class="shopping-item">Lancer’s Javelin of Quickness</span></td><td><span class="shopping-stats">+3 Javelin/Spear Skills, +40 IAS</span></td><td>Malah Nightmare/Hell</td><td>75***</td></tr>
+                    <tr><td><span class="shopping-item">Archer’s Gloves of Alacrity</span></td><td><span class="shopping-stats">+3 Bow/Crossbow Skills, +20 IAS</span></td><td>Charsi Hell, Anya Nightmare/Hell</td><td>55*, 68-74*** (Charsi), 75+*** (Anya)</td></tr>
+                    <tr><td><span class="shopping-item">Lancer’s Gloves of Alacrity</span></td><td><span class="shopping-stats">+3 Javelin/Spear Skills, +20 IAS</span></td><td>Charsi Hell, Anya Nightmare/Hell</td><td>55*, 68-74*** (Charsi), 75+*** (Anya)</td></tr>
+                    <tr><td><span class="shopping-item">Echoing Weapon (Bo Stick)</span></td><td><span class="shopping-stats">+3 Warcries</span></td><td>Charsi/Malah/Anya/Larzuk Nightmare</td><td>55*, 75***</td></tr>
+                    <tr><td><span class="shopping-item">Gaean Club</span></td><td><span class="shopping-stats">+3 Elemental Skills</span></td><td>Gheed/Charsi Nightmare</td><td>55*, 71***</td></tr>
+                    <tr><td><span class="shopping-item">Keeper’s Club</span></td><td><span class="shopping-stats">+3 Summoning Skills</span></td><td>Gheed/Charsi Nightmare</td><td>55*, 71***</td></tr>
+                    <tr><td><span class="shopping-item">White Runeword Base (Wand)</span></td><td><span class="shopping-stats">+3 Bone Spear/Desecrate/Corpse Explosion</span></td><td>Drognan Normal</td><td>13*</td></tr>
+                    <tr><td><span class="shopping-item">Rose Branded Scepter</span></td><td><span class="shopping-stats">+3 Combat Skills, +10 FCR, +3 Holy Bolt/Fist of the Heavens</span></td><td>Drognan/Malah Nightmare/Hell</td><td>55*, 65*** (Hell Drognan), 75*** (Nightmare Drognan/Malah)</td></tr>
+                    <tr><td><span class="shopping-item">Marshal’s Scepter</span></td><td><span class="shopping-stats">+3 Offensive Auras, +3 Sanctuary</span></td><td>Drognan/Malah Nightmare/Hell</td><td>55*, 65*** (Hell Drognan), 75*** (Nightmare Drognan/Malah)</td></tr>
+                </tbody>
+            </table>
+            <h3>Ladder Reset Items</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item Type</th>
+                        <th>Desired Stats</th>
+                        <th>Vendor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><span class="shopping-item">Leaf Runeword Base (Staff)</span></td><td><span class="shopping-stats">+3 Fire Bolt/Fireball/Enflame</span></td><td>Drognan/Akara Normal</td></tr>
+                    <tr><td><span class="shopping-item">Steel Runeword Base (Flail)</span></td><td><span class="shopping-stats">2os</span></td><td>Fara Normal</td></tr>
+                    <tr><td><span class="shopping-item">Malice Runeword Base</span></td><td><span class="shopping-stats">3os Melee Weapon</span></td><td>Fara/Charsi Normal</td></tr>
+                    <tr><td><span class="shopping-item">Ancient’s Pledge Runeword Base (Large Shield)</span></td><td><span class="shopping-stats">3os</span></td><td>Fara Normal</td></tr>
+                    <tr><td><span class="shopping-item">Stealth Runeword Base</span></td><td><span class="shopping-stats">2os Body Armor</span></td><td>Fara Normal</td></tr>
+                    <tr><td><span class="shopping-item">2-3os Great Helm, Crown, Mask</span></td><td><span class="shopping-stats">2-3os</span></td><td>Fara Normal</td></tr>
+                    <tr><td><span class="shopping-item">Plated Belt</span></td><td><span class="shopping-stats">+30 or More Life</span></td><td>Elsix Nightmare</td></tr>
                 </tbody>
             </table>
         </details>
@@ -326,23 +711,25 @@
         <details id="ubers">
             <summary>Ubers Guide</summary>
             <h2>Ubers Guide</h2>
-            <p>Uber Tristram is an endgame challenge. Here’s how to tackle it.</p>
+            <p>Uber Tristram is an endgame challenge. Here’s how to access and defeat it.</p>
             <h3>Accessing Uber Tristram</h3>
             <ol>
-                <li>Collect Keys in Hell:
+                <li>Collect Keys in Hell difficulty:
                     <ul>
                         <li>Terror Key: The Countess</li>
                         <li>Hate Key: The Summoner</li>
                         <li>Destruction Key: Nihlathak</li>
                     </ul>
                 </li>
-                <li>Combine 1 of each key in the Cube to open the portal.</li>
+                <li>Combine 1 of each key in the Horadric Cube to open the portal to Uber Tristram.</li>
             </ol>
-            <h3>Strategies</h3>
+            <h3>Strategies for Defeating Ubers</h3>
             <ul>
-                <li><strong>Life Tap</strong>: Use a wand or curse for sustain.</li>
-                <li><strong>Crushing Blow</strong>: Essential for boss damage.</li>
-                <li><strong>Resistances</strong>: Max fire and lightning resists.</li>
+                <li><strong>Life Tap</strong>: Use a weapon with Life Tap or have a Necromancer cast it to sustain your health.</li>
+                <li><strong>Crushing Blow</strong>: Gear with Crushing Blow is essential for reducing the bosses' health quickly.</li>
+                <li><strong>Resistances</strong>: Max out your resistances, especially fire and lightning, to survive their attacks.</li>
+                <li><strong>Mobility</strong>: Use teleport or fast run/walk to avoid being surrounded by minions.</li>
+                <li><strong>Builds</strong>: Smiter Paladin, Kicksin Assassin, and Zealot Paladin are popular builds for ubers.</li>
             </ul>
         </details>
 
@@ -350,7 +737,7 @@
         <details id="maps">
             <summary>Maps</summary>
             <h2>Maps</h2>
-            <p>Area levels and directions for key farming spots.</p>
+            <p>Below are area levels and directions for key farming spots.</p>
             <h3>Tower and Catacombs</h3>
             <table>
                 <thead>
@@ -365,6 +752,14 @@
                 <tbody>
                     <tr><td>Black Marsh</td><td>6</td><td>38</td><td>69</td><td>Follow path</td></tr>
                     <tr><td>Tower Cellar Level 1</td><td>7</td><td>38</td><td>75</td><td>Left</td></tr>
+                    <tr><td>Tower Cellar Level 2</td><td>7</td><td>39</td><td>76</td><td>Left</td></tr>
+                    <tr><td>Tower Cellar Level 3</td><td>7</td><td>40</td><td>77</td><td>Left</td></tr>
+                    <tr><td>Tower Cellar Level 4</td><td>7</td><td>41</td><td>78</td><td>Left</td></tr>
+                    <tr><td>Tower Cellar Level 5</td><td>7</td><td>42</td><td>79</td><td></td></tr>
+                    <tr><td>Cathedral</td><td>11</td><td>42</td><td>72</td><td>Right</td></tr>
+                    <tr><td>Catacombs Level 1</td><td>11</td><td>42</td><td>72</td><td></td></tr>
+                    <tr><td>Catacombs Level 2</td><td>11</td><td>42</td><td>73</td><td>wp→Right</td></tr>
+                    <tr><td>Catacombs Level 3</td><td>12</td><td>43</td><td>73</td><td></td></tr>
                 </tbody>
             </table>
         </details>
@@ -373,23 +768,23 @@
         <details id="builds">
             <summary>Builds</summary>
             <h2>Builds</h2>
-            <p>Popular builds with skills, stats, and gear.</p>
+            <p>Below are popular builds for each class, including skills, stats, and gear recommendations.</p>
             <h3>Sorceress - Blizzard</h3>
             <p><strong>Skills</strong>: Blizzard, Glacial Spike, Cold Mastery</p>
-            <p><strong>Stats</strong>: Strength for gear, rest Vitality</p>
-            <p><strong>Gear</strong>: Spirit, Tal Rasha’s set</p>
-            <p><strong>Playstyle</strong>: Cast Blizzard for AoE damage</p>
+            <p><strong>Stats</strong>: Strength for gear, rest into Vitality</p>
+            <p><strong>Gear</strong>: <span class="runeword">Spirit</span> runeword, Tal Rasha’s set, Nightwing’s Veil</p>
+            <p><strong>Playstyle</strong>: Cast Blizzard for AoE damage, use Glacial Spike to control enemies</p>
         </details>
 
         <!-- Ladder Start Tutorial Section -->
         <details id="ladder">
             <summary>Ladder Start Tutorial</summary>
             <h2>Ladder Start Tutorial</h2>
-            <p>Tips for starting a ladder season.</p>
+            <p>Tips for starting a ladder season for each class.</p>
             <h3>Sorceress</h3>
             <p><strong>Leveling</strong>: Fire Bolt → Fire Ball → Blizzard</p>
-            <p><strong>Gear</strong>: Stealth (Tal + Eth), Leaf (Tir + Ral)</p>
-            <p><strong>Strategies</strong>: Farm Countess for runes</p>
+            <p><strong>Gear</strong>: <span class="runeword">Stealth</span> (Tal + Eth), <span class="runeword">Leaf</span> (Tir + Ral)</p>
+            <p><strong>Strategies</strong>: Farm Countess for runes, complete Radament quest for skill point</p>
         </details>
     </div>
 
