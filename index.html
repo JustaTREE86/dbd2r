@@ -3,49 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diablo 2 Resurrected Cheat Sheet</title>
+    <title>Diablo 2 Resurrected Comprehensive Guide</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             background-color: #1a1a1a;
             color: #fff;
             font-family: Arial, sans-serif;
-            padding: 20px;
             line-height: 1.6;
         }
-        h1 {
-            text-align: center;
-            color: #d4a017;
-            margin-top: 60px;
-        }
-        h2, h3 {
-            color: #d4a017;
-        }
-        #toc {
-            margin: 20px 0;
-            padding: 10px;
+        .navbar {
             background-color: #333;
-            border-radius: 5px;
-            font-size: 0.9em;
         }
-        #toc a {
+        .navbar-brand, .nav-link {
+            color: #d4a017 !important;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1, h2, h3 {
             color: #d4a017;
-            text-decoration: none;
-            margin-right: 10px;
-        }
-        #toc a:hover {
-            text-decoration: underline;
-        }
-        details {
-            margin-bottom: 20px;
-            background-color: #222;
-            border-radius: 5px;
-            padding: 10px;
-        }
-        summary {
-            cursor: pointer;
-            font-size: 1.3em;
-            color: #d4a017;
-            padding: 5px;
         }
         table {
             width: 100%;
@@ -57,32 +34,12 @@
             border: 1px solid #d4a017;
             padding: 6px;
             text-align: left;
-            white-space: nowrap;
         }
         th {
             background-color: #333;
         }
         tr:nth-child(even) {
             background-color: #2a2a2a;
-        }
-        #search-bar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 10px;
-            background-color: #333;
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-        }
-        #search {
-            width: 100%;
-            padding: 8px;
-            font-size: 1em;
-            background-color: #444;
-            color: #fff;
-            border: 1px solid #d4a017;
-            border-radius: 4px;
         }
         .highlight {
             background-color: #ffeb3b;
@@ -116,649 +73,333 @@
         .shopping-stats {
             color: #ffff00; /* Yellow for desired stats in shopping */
         }
+        details {
+            margin-bottom: 20px;
+            background-color: #222;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        summary {
+            cursor: pointer;
+            font-size: 1.3em;
+            color: #d4a017;
+            padding: 5px;
+        }
     </style>
 </head>
 <body>
-    <div id="search-bar">
-        <input type="text" id="search" placeholder="Search the cheat sheet..." oninput="searchFunction()">
-    </div>
-    <h1>Diablo 2 Resurrected Cheat Sheet</h1>
-    <div id="toc">
-        <strong>Table of Contents:</strong> 
-        <a href="#runes">Runes</a> | 
-        <a href="#runewords">Runewords</a> | 
-        <a href="#cube">Cube Recipes</a> | 
-        <a href="#breakpoints">Stat Breakpoints</a> | 
-        <a href="#crafting">Crafting</a> | 
-        <a href="#shopping">Shopping Guide</a> | 
-        <a href="#ubers">Ubers Guide</a> | 
-        <a href="#maps">Maps</a>
-        <br><strong>External Resources:</strong> <a href="https://www.d2jsp.com" target="_blank">D2JSP</a>
-    </div>
-
-    <!-- Runes Section -->
-    <details id="runes">
-        <summary>Runes</summary>
-        <h3>Low Runes (El to Ist)</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Rune</th>
-                    <th>Weapon Properties</th>
-                    <th>Armor/Helm/Shield Properties</th>
-                    <th>How to Obtain</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td class="rune">El</td><td>+50 AR, +1 Light Radius</td><td>+15 Def, +1 Light Radius</td><td>Normal Countess, drops</td></tr>
-                <tr><td class="rune">Eld</td><td>+75% Damage to Undead, +50 AR vs. Undead</td><td>+15% Stamina Regen, +7% Block (Shields)</td><td>Normal Countess, 3 El</td></tr>
-                <tr><td class="rune">Tir</td><td>+2 Mana per Kill</td><td>+2 Mana per Kill</td><td>Normal Countess, 3 Eld</td></tr>
-                <tr><td class="rune">Nef</td><td>Knockback</td><td>+30 Def vs. Missile</td><td>Normal Countess, 3 Tir</td></tr>
-                <tr><td class="rune">Eth</td><td>-25% Target Def</td><td>+15% Mana Regen</td><td>Normal Countess, 3 Nef</td></tr>
-                <tr><td class="rune">Ith</td><td>+9 Max Damage</td><td>15% Damage to Mana</td><td>Normal Countess, 3 Eth</td></tr>
-                <tr><td class="rune">Tal</td><td>+75 Poison Dmg (5s)</td><td>+35% Poison Res</td><td>Normal Countess, 3 Ith</td></tr>
-                <tr><td class="rune">Ral</td><td>+5-30 Fire Dmg</td><td>+35% Fire Res</td><td>Normal Countess, 3 Tal</td></tr>
-                <tr><td class="rune">Ort</td><td>+1-50 Lightning Dmg</td><td>+35% Lightning Res</td><td>Normal Countess, 3 Ral</td></tr>
-                <tr><td class="rune">Thul</td><td>+3-14 Cold Dmg (3s)</td><td>+35% Cold Res</td><td>Normal Countess, 3 Ort + Chipped Topaz</td></tr>
-                <tr><td class="rune">Amn</td><td>7% Life Steal</td><td>Attacker Takes 14 Dmg</td><td>Nightmare Countess, 3 Thul + Chipped Amethyst</td></tr>
-                <tr><td class="rune">Sol</td><td>+9 Min Damage</td><td>-7 Damage Taken</td><td>Nightmare Countess, 3 Amn + Chipped Sapphire</td></tr>
-                <tr><td class="rune">Shael</td><td>+20% IAS</td><td>+20% FHR</td><td>Nightmare Countess, 3 Sol + Chipped Ruby</td></tr>
-                <tr><td class="rune">Dol</td><td>25% Flee</td><td>+7 Life Regen</td><td>Nightmare Countess, 3 Shael + Chipped Emerald</td></tr>
-                <tr><td class="rune">Hel</td><td>-20% Requirements</td><td>-15% Requirements</td><td>Nightmare Countess, 3 Dol + Chipped Diamond</td></tr>
-                <tr><td class="rune">Io</td><td>+10 Vitality</td><td>+10 Vitality</td><td>Nightmare Countess, 3 Hel + Flawed Topaz</td></tr>
-                <tr><td class="rune">Lum</td><td>+10 Energy</td><td>+10 Energy</td><td>Nightmare Countess, 3 Io + Flawed Amethyst</td></tr>
-                <tr><td class="rune">Ko</td><td>+10 Dexterity</td><td>+10 Dexterity</td><td>Nightmare Countess, 3 Lum + Flawed Sapphire</td></tr>
-                <tr><td class="rune">Fal</td><td>+10 Strength</td><td>+10 Strength</td><td>Nightmare Countess, 3 Ko + Flawed Ruby</td></tr>
-                <tr><td class="rune">Lem</td><td>+75% Gold</td><td>+50% Gold</td><td>Hell Countess, 3 Fal + Flawed Emerald</td></tr>
-                <tr><td class="rune">Pul</td><td>+75% Dmg to Demons, +100 AR vs. Demons</td><td>+30% Def</td><td>Hell Countess, 3 Lem + Flawed Diamond</td></tr>
-                <tr><td class="rune">Um</td><td>25% Open Wounds</td><td>All Res +15 (Armor/Helm), +22 (Shields)</td><td>Hell Countess, 2 Pul + Topaz</td></tr>
-                <tr><td class="rune">Mal</td><td>Prevent Monster Heal</td><td>-7 Magic Dmg</td><td>Hell Countess, 2 Um + Amethyst</td></tr>
-                <tr><td class="rune">Ist</td><td>+30% MF</td><td>+25% MF</td><td>Hell Countess, 2 Mal + Sapphire</td></tr>
-            </tbody>
-        </table>
-        <h3>High Runes (Gul to Zod)</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Rune</th>
-                    <th>Weapon Properties</th>
-                    <th>Armor/Helm/Shield Properties</th>
-                    <th>How to Obtain</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td class="rune">Gul</td><td>+20% AR</td><td>+5% Max Poison Resist</td><td>Hell Countess, 2 Ist + Ruby</td></tr>
-                <tr><td class="rune">Vex</td><td>7% Mana Steal</td><td>+5% Max Fire Resist</td><td>Hell Countess, 2 Gul + Emerald</td></tr>
-                <tr><td class="rune">Ohm</td><td>+50% Enhanced Dmg</td><td>+5% Max Cold Resist</td><td>Hell Countess, 2 Vex + Diamond</td></tr>
-                <tr><td class="rune">Lo</td><td>20% Deadly Strike</td><td>+5% Max Lightning Resist</td><td>Hell Countess, 2 Ohm + Flawless Topaz</td></tr>
-                <tr><td class="rune">Sur</td><td>Hit Blinds Target</td><td>+5% Max Mana (Armor/Helm), +50 Mana (Shields)</td><td>Hell Countess, 2 Lo + Flawless Amethyst</td></tr>
-                <tr><td class="rune">Ber</td><td>20% Crushing Blow</td><td>-8% Dmg Taken</td><td>Hell Countess, 2 Sur + Flawless Sapphire</td></tr>
-                <tr><td class="rune">Jah</td><td>Ignore Target Def</td><td>+5% Max Life (Armor/Helm), +50 Life (Shields)</td><td>Hell Countess, 2 Ber + Flawless Ruby</td></tr>
-                <tr><td class="rune">Cham</td><td>Freeze Target +3</td><td>Cannot Be Frozen</td><td>Hell Countess, 2 Jah + Flawless Emerald</td></tr>
-                <tr><td class="rune">Zod</td><td>Indestructible</td><td>Indestructible</td><td>Hell drops, rare</td></tr>
-            </tbody>
-        </table>
-    </details>
-
-    <!-- Runewords Section -->
-    <details id="runewords">
-        <summary>Runewords</summary>
-        <table>
-            <thead>
-                <tr>
-                    <th>Runeword</th>
-                    <th>Runes</th>
-                    <th>Item Type</th>
-                    <th>Effects</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td class="runeword">Ancient's Pledge</td><td class="rune">Ral Ort Tal</td><td>3-socket Shields</td><td>+50% Enhanced Defense, Cold Resist +43%, Fire Resist +48%, Lightning Resist +48%, Poison Resist +48%, 10% Damage Taken Goes to Mana</td></tr>
-                <tr><td class="runeword">Spirit</td><td class="rune">Tal Thul Ort Amn</td><td>4-socket Swords/Shields</td><td>+2 To All Skills, +25-35% FCR, +55% FHR, +250 Def vs. Missile, +22 Vitality, +89-112 Mana, Magic Absorb 3-8</td></tr>
-                <tr><td class="runeword">Insight</td><td class="rune">Ral Tir Tal Sol</td><td>4-socket Polearms/Staves</td><td>Level 12-17 Meditation Aura, +35% FCR, +200-260% Enhanced Damage, +9 Min Damage, 23% Better Chance of Magic Find</td></tr>
-                <tr><td class="runeword">Enigma</td><td class="rune">Jah Ith Ber</td><td>3-socket Armor</td><td>+2 To All Skills, +45% Faster Run/Walk, +1 To Teleport, +750-775 Defense, + (0.75 Per Character Level) To Strength, Increase Maximum Life 5%, Damage Reduced By 8%, +14 Life After Each Kill, 15% Damage Taken Goes To Mana, + (1 Per Character Level) % Better Chance of Getting Magic Items</td></tr>
-                <tr><td class="runeword">Infinity</td><td class="rune">Ber Mal Ber Ist</td><td>4-socket Polearms</td><td>50% Chance To Cast Level 20 Chain Lightning When You Kill An Enemy, Level 12 Conviction Aura When Equipped, +35% Faster Run/Walk, +255-325% Enhanced Damage, -45-55% To Enemy Lightning Resistance, 40% Chance of Crushing Blow, Prevent Monster Heal, 0.5-49.5 To Vitality (Based on Character Level), 30% Better Chance of Getting Magic Items, Level 21 Cyclone Armor (30 Charges)</td></tr>
-                <tr><td class="runeword">Call to Arms</td><td class="rune">Amn Ral Mal Ist Ohm</td><td>5-socket Weapons</td><td>+1 To All Skills, +40% Increased Attack Speed, +250-290% Enhanced Damage, Adds 5-30 Fire Damage, 7% Life Stolen Per Hit, +2-6 To Battle Command, +1-6 To Battle Orders, +1-4 To Battle Cry, Prevent Monster Heal, Replenish Life +12, 30% Better Chance of Getting Magic Items</td></tr>
-            </tbody>
-        </table>
-    </details>
-
-    <!-- Cube Recipes Section -->
-    <details id="cube">
-        <summary>Cube Recipes</summary>
-        <h3>Rune Upgrades</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Ingredients</th>
-                    <th>Result</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td class="cube-ingredients">3 El Runes</td><td class="cube-result">1 Eld Rune</td></tr>
-                <tr><td class="cube-ingredients">3 Eld Runes</td><td class="cube-result">1 Tir Rune</td></tr>
-                <tr><td class="cube-ingredients">3 Thul Runes + 1 Chipped Topaz</td><td class="cube-result">1 Amn Rune</td></tr>
-            </tbody>
-        </table>
-        <h3>Gem Upgrades</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Ingredients</th>
-                    <th>Result</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td class="cube-ingredients">3 Chipped Gems (same type)</td><td class="cube-result">1 Flawed Gem (same type)</td></tr>
-                <tr><td class="cube-ingredients">3 Flawed Gems (same type)</td><td class="cube-result">1 Normal Gem (same type)</td></tr>
-            </tbody>
-        </table>
-        <h3>Other Recipes</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Ingredients</th>
-                    <th>Result</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td class="cube-ingredients">1 Ral Rune + 1 Amn Rune + 1 Perfect Amethyst + Normal Weapon</td><td class="cube-result">Socketed Weapon of same type</td></tr>
-                <tr><td class="cube-ingredients">1 Tal Rune + 1 Thul Rune + 1 Perfect Topaz + Normal Body Armor</td><td class="cube-result">Socketed Body Armor of same type</td></tr>
-                <tr><td class="cube-ingredients">1 Ral Rune + 1 Thul Rune + 1 Perfect Sapphire + Normal Helm</td><td class="cube-result">Socketed Helm of same type</td></tr>
-                <tr><td class="cube-ingredients">1 Tal Rune + 1 Amn Rune + 1 Perfect Ruby + Normal Shield</td><td class="cube-result">Socketed Shield of same type</td></tr>
-                <tr><td class="cube-ingredients">3 Perfect Skulls + 1 Rare Item</td><td class="cube-result">Rare Item of same type</td></tr>
-                <tr><td class="cube-ingredients">6 Perfect Skulls + 1 Rare Item</td><td class="cube-result">Rare Item of same type</td></tr>
-                <tr><td class="cube-ingredients">1 Ort Rune + 1 Amn Rune + 1 Perfect Sapphire + Normal (Basic) Rare Weapon</td><td class="cube-result">Exceptional Rare Weapon</td></tr>
-                <tr><td class="cube-ingredients">1 Ral Rune + 1 Sol Rune + 1 Perfect Emerald + Normal (Basic) Rare Armor</td><td class="cube-result">Exceptional Rare Armor</td></tr>
-                <tr><td class="cube-ingredients">1 Fal Rune + 1 Um Rune + 1 Perfect Sapphire + Exceptional Rare Weapon</td><td class="cube-result">Elite Rare Weapon</td></tr>
-                <tr><td class="cube-ingredients">1 Ko Rune + 1 Lem Rune + 1 Perfect Diamond + Exceptional Rare Armor</td><td class="cube-result">Elite Rare Armor</td></tr>
-            </tbody>
-        </table>
-    </details>
-
-    <!-- Stat Breakpoints Section -->
-    <details id="breakpoints">
-        <summary>Stat Breakpoints</summary>
-        <p>Faster Cast Rate (FCR) and Faster Hit Recovery (FHR) breakpoints for all classes, sourced from Maxroll.gg.</p>
-        <h3>Amazon</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>FCR %</th>
-                    <th>Frames</th>
-                    <th>FHR %</th>
-                    <th>Frames</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>0</td><td>13</td><td>0</td><td>11</td></tr>
-                <tr><td>9</td><td>12</td><td>6</td><td>10</td></tr>
-                <tr><td>20</td><td>11</td><td>13</td><td>9</td></tr>
-                <tr><td>37</td><td>10</td><td>20</td><td>8</td></tr>
-                <tr><td>63</td><td>9</td><td>32</td><td>7</td></tr>
-                <tr><td>105</td><td>8</td><td>52</td><td>6</td></tr>
-                <tr><td>200</td><td>7</td><td>86</td><td>5</td></tr>
-                <tr><td></td><td></td><td>174</td><td>4</td></tr>
-                <tr><td></td><td></td><td>600</td><td>3</td></tr>
-            </tbody>
-        </table>
-        <h3>Assassin</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>FCR %</th>
-                    <th>Frames</th>
-                    <th>FHR %</th>
-                    <th>Frames</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>0</td><td>16</td><td>0</td><td>9</td></tr>
-                <tr><td>8</td><td>15</td><td>7</td><td>8</td></tr>
-                <tr><td>16</td><td>14</td><td>15</td><td>7</td></tr>
-                <tr><td>27</td><td>13</td><td>27</td><td>6</td></tr>
-                <tr><td>42</td><td>12</td><td>48</td><td>5</td></tr>
-                <tr><td>65</td><td>11</td><td>86</td><td>4</td></tr>
-                <tr><td>102</td><td>10</td><td>200</td><td>3</td></tr>
-                <tr><td>174</td><td>9</td><td>4680</td><td>2</td></tr>
-            </tbody>
-        </table>
-        <h3>Barbarian</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>FCR %</th>
-                    <th>Frames</th>
-                    <th>FHR %</th>
-                    <th>Frames</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>0</td><td>15</td><td>0</td><td>9</td></tr>
-                <tr><td>9</td><td>14</td><td>7</td><td>8</td></tr>
-                <tr><td>18</td><td>13</td><td>15</td><td>7</td></tr>
-                <tr><td>30</td><td>12</td><td>27</td><td>6</td></tr>
-                <tr><td>48</td><td>11</td><td>48</td><td>5</td></tr>
-                <tr><td>75</td><td>10</td><td>86</td><td>4</td></tr>
-                <tr><td>120</td><td>9</td><td>200</td><td>3</td></tr>
-                <tr><td></td><td></td><td>4680</td><td>2</td></tr>
-            </tbody>
-        </table>
-        <h3>Druid (Human, 1-Handed Weapon or 2-Handed Sword)</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>FCR %</th>
-                    <th>Frames</th>
-                    <th>FHR %</th>
-                    <th>Frames</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>0</td><td>19</td><td>0</td><td>14</td></tr>
-                <tr><td>4</td><td>18</td><td>3</td><td>13</td></tr>
-                <tr><td>10</td><td>17</td><td>7</td><td>12</td></tr>
-                <tr><td>19</td><td>16</td><td>13</td><td>11</td></tr>
-                <tr><td>30</td><td>15</td><td>19</td><td>10</td></tr>
-                <tr><td>46</td><td>14</td><td>29</td><td>9</td></tr>
-                <tr><td>68</td><td>13</td><td>42</td><td>8</td></tr>
-                <tr><td>99</td><td>12</td><td>63</td><td>7</td></tr>
-                <tr><td>163</td><td>11</td><td>99</td><td>6</td></tr>
-                <tr><td></td><td></td><td>174</td><td>5</td></tr>
-                <tr><td></td><td></td><td>456</td><td>4</td></tr>
-            </tbody>
-        </table>
-        <h3>Druid (Human, Other Weapons)</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>FCR %</th>
-                    <th>Frames</th>
-                    <th>FHR %</th>
-                    <th>Frames</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>0</td><td>19</td><td>0</td><td>13</td></tr>
-                <tr><td>4</td><td>18</td><td>5</td><td>12</td></tr>
-                <tr><td>10</td><td>17</td><td>10</td><td>11</td></tr>
-                <tr><td>19</td><td>16</td><td>16</td><td>10</td></tr>
-                <tr><td>30</td><td>15</td><td>26</td><td>9</td></tr>
-                <tr><td>46</td><td>14</td><td>39</td><td>8</td></tr>
-                <tr><td>68</td><td>13</td><td>56</td><td>7</td></tr>
-                <tr><td>99</td><td>12</td><td>86</td><td>6</td></tr>
-                <tr><td>163</td><td>11</td><td>152</td><td>5</td></tr>
-                <tr><td></td><td></td><td>377</td><td>4</td></tr>
-            </tbody>
-        </table>
-        <h3>Druid (Wolf)</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>FCR %</th>
-                    <th>Frames</th>
-                    <th>FHR %</th>
-                    <th>Frames</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>0</td><td>19</td><td>0</td><td>7</td></tr>
-                <tr><td>4</td><td>18</td><td>9</td><td>6</td></tr>
-                <tr><td>10</td><td>17</td><td>20</td><td>5</td></tr>
-                <tr><td>19</td><td>16</td><td>42</td><td>4</td></tr>
-                <tr><td>30</td><td>15</td><td>86</td><td>3</td></tr>
-                <tr><td>46</td><td>14</td><td>280</td><td>2</td></tr>
-                <tr><td>68</td><td>13</td><td></td><td></td></tr>
-                <tr><td>99</td><td>12</td><td></td><td></td></tr>
-                <tr><td>163</td><td>11</td><td></td><td></td></tr>
-            </tbody>
-        </table>
-        <h3>Druid (Bear)</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>FCR %</th>
-                    <th>Frames</th>
-                    <th>FHR %</th>
-                    <th>Frames</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>0</td><td>19</td><td>0</td><td>13</td></tr>
-                <tr><td>4</td><td>18</td><td>5</td><td>12</td></tr>
-                <tr><td>10</td><td>17</td><td>10</td><td>11</td></tr>
-                <tr><td>19</td><td>16</td><td>16</td><td>10</td></tr>
-                <tr><td>30</td><td>15</td><td>24</td><td>9</td></tr>
-                <tr><td>46</td><td>14</td><td>37</td><td>8</td></tr>
-                <tr><td>68</td><td>13</td><td>54</td><td>7</td></tr>
-                <tr><td>99</td><td>12</td><td>86</td><td>6</td></tr>
-                <tr><td>163</td><td>11</td><td>152</td><td>5</td></tr>
-                <tr><td></td><td></td><td>360</td><td>4</td></tr>
-            </tbody>
-        </table>
-        <h3>Necromancer</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>FCR %</th>
-                    <th>Frames</th>
-                    <th>FHR %</th>
-                    <th>Frames</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>0</td><td>15</td><td>0</td><td>13</td></tr>
-                <tr><td>9</td><td>14</td><td>5</td><td>12</td></tr>
-                <tr><td>18</td><td>13</td><td>10</td><td>11</td></tr>
-                <tr><td>30</td><td>12</td><td>16</td><td>10</td></tr>
-                <tr><td>48</td><td>11</td><td>26</td><td>9</td></tr>
-                <tr><td>75</td><td>10</td><td>39</td><td>8</td></tr>
-                <tr><td>125</td><td>9</td><td>56</td><td>7</td></tr>
-                <tr><td></td><td></td><td>86</td><td>6</td></tr>
-                <tr><td></td><td></td><td>152</td><td>5</td></tr>
-                <tr><td></td><td></td><td>377</td><td>4</td></tr>
-            </tbody>
-        </table>
-        <h3>Paladin</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>FCR %</th>
-                    <th>Frames</th>
-                    <th>FHR %</th>
-                    <th>Frames</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>0</td><td>13</td><td>0</td><td>9</td></tr>
-                <tr><td>9</td><td>12</td><td>7</td><td>8</td></tr>
-                <tr><td>18</td><td>11</td><td>15</td><td>7</td></tr>
-                <tr><td>30</td><td>10</td><td>27</td><td>6</td></tr>
-                <tr><td>48</td><td>9</td><td>48</td><td>5</td></tr>
-                <tr><td>75</td><td>8</td><td>86</td><td>4</td></tr>
-                <tr><td>125</td><td>7</td><td>200</td><td>3</td></tr>
-                <tr><td></td><td></td><td>4680</td><td>2</td></tr>
-            </tbody>
-        </table>
-        <h3>Sorceress</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>FCR %</th>
-                    <th>Frames</th>
-                    <th>FHR %</th>
-                    <th>Frames</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>0</td><td>13</td><td>0</td><td>15</td></tr>
-                <tr><td>9</td><td>12</td><td>5</td><td>14</td></tr>
-                <tr><td>20</td><td>11</td><td>9</td><td>13</td></tr>
-                <tr><td>37</td><td>10</td><td>14</td><td>12</td></tr>
-                <tr><td>63</td><td>9</td><td>20</td><td>11</td></tr>
-                <tr><td>105</td><td>8</td><td>30</td><td>10</td></tr>
-                <tr><td>200</td><td>7</td><td>42</td><td>9</td></tr>
-                <tr><td></td><td></td><td>60</td><td>8</td></tr>
-                <tr><td></td><td></td><td>86</td><td>7</td></tr>
-                <tr><td></td><td></td><td>142</td><td>6</td></tr>
-                <tr><td></td><td></td><td>280</td><td>5</td></tr>
-                <tr><td></td><td></td><td>1480</td><td>4</td></tr>
-            </tbody>
-        </table>
-    </details>
-
-    <!-- Crafting Section -->
-    <details id="crafting">
-        <summary>Crafting</summary>
-        <h3>Crafting Explanation</h3>
-        <p>Think of crafting like cooking a special recipe. The quality of your dish depends on two main things: the chef's skill (your character level) and the quality of the ingredients (the item's level). In Diablo 2, this combined quality is called the "item level" or ilvl. The higher the ilvl, the better the potential affixes (like extra sprinkles or toppings) your crafted item can have.</p>
-        <p>To calculate the ilvl of a crafted item, take half of your character level and half of the item's level, then add them together. For example, if your character is level 80 (half is 40) and the item is level 60 (half is 30), the crafted item's ilvl would be 40 + 30 = 70.</p>
-        <h3>Blood Crafts</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th class="crafting-item">Item Type</th>
-                    <th class="crafting-ingredients">Ingredients</th>
-                    <th>Fixed Affixes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td class="crafting-item">Blood Gloves</td><td class="crafting-ingredients">Magic Heavy Gloves/Sharkskin Gloves/Vampirebone Gloves + Jewel + Nef Rune + Perfect Ruby</td><td>5-10% Crushing Blow, 1-3% Life Steal, +10-20 Life</td></tr>
-            </tbody>
-        </table>
-        <h3>Caster Crafts</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th class="crafting-item">Item Type</th>
-                    <th class="crafting-ingredients">Ingredients</th>
-                    <th>Fixed Affixes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td class="crafting-item">Caster Amulet</td><td class="crafting-ingredients">Magic Amulet + Jewel + Ral Rune + Perfect Amethyst</td><td>1-4 Mana After Each Kill, +10-20 Mana, Regenerate Mana 4-10%</td></tr>
-            </tbody>
-        </table>
-        <h3>Hit Power Crafts</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th class="crafting-item">Item Type</th>
-                    <th class="crafting-ingredients">Ingredients</th>
-                    <th>Fixed Affixes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td class="crafting-item">Hit Power Gloves</td><td class="crafting-ingredients">Magic Heavy Bracers/Demonhide Gloves + Jewel + Ort Rune + Perfect Sapphire</td><td>5% Chance to Cast Level 4 Frost Nova When Struck, Attacker Takes Damage of 3-7, +10-20 Defense</td></tr>
-            </tbody>
-        </table>
-        <h3>Safety Crafts</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th class="crafting-item">Item Type</th>
-                    <th class="crafting-ingredients">Ingredients</th>
-                    <th>Fixed Affixes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td class="crafting-item">Safety Shield</td><td class="crafting-ingredients">Magic Kite Shield/Dragon Shield/Monarch + Jewel + Thul Rune + Perfect Emerald</td><td>+ (1 Per Character Level) 1-99 Defense (Based on Character Level), Magic Damage Reduced by 1-2, Damage Reduced by 1-4</td></tr>
-            </tbody>
-        </table>
-    </details>
-
-    <!-- Shopping Guide Section -->
-    <details id="shopping">
-        <summary>Shopping Guide</summary>
-        <p>Where to buy useful items from vendors. The levels in the table indicate:</p>
-        <ul>
-            <li><strong>Low (**):</strong> Lowest level to get the affix.</li>
-            <li><strong>Recommended (***):</strong> Best level to shop for balanced cost and quality.</li>
-            <li><strong>High (****):</strong> Highest level for the best possible affix.</li>
-        </ul>
-        <h3>Weapons for All Characters</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th class="shopping-item">Item Type</th>
-                    <th class="shopping-stats">Desired Stats</th>
-                    <th>Vendor & Location</th>
-                    <th>Level (Low/Rec/High)</th>
-                    <th>Notes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td class="shopping-item">Weapon of Life Tap (Wand/Daggers)</td><td class="shopping-stats">Life Tap</td><td>Malah Hell, Drognan Hell</td><td>19 / 78 / 91</td><td></td></tr>
-                <tr><td class="shopping-item">+3 Skill Tree Weapons</td><td class="shopping-stats">+3 to [Skill Tree]</td><td>Drognan Nightmare</td><td>- / 35 / -</td><td>For early ladder</td></tr>
-            </tbody>
-        </table>
-        <h3>Armors</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th class="shopping-item">Item Type</th>
-                    <th class="shopping-stats">Desired Stats</th>
-                    <th>Vendor & Location</th>
-                    <th>Level (Low/Rec/High)</th>
-                    <th>Notes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td class="shopping-item">Armor with +Life</td><td class="shopping-stats">+Life, +Resistances</td><td>Fara Hell, Jamella Hell</td><td>25 / 50 / 85</td><td>Look for high defense</td></tr>
-            </tbody>
-        </table>
-        <h3>Helms</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th class="shopping-item">Item Type</th>
-                    <th class="shopping-stats">Desired Stats</th>
-                    <th>Vendor & Location</th>
-                    <th>Level (Low/Rec/High)</th>
-                    <th>Notes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td class="shopping-item">Helm with +Skills</td><td class="shopping-stats">+1-2 to [Skill Tree]</td><td>Elzix Nightmare, Asheara Hell</td><td>20 / 40 / 70</td><td>Useful for casters</td></tr>
-            </tbody>
-        </table>
-        <h3>Shields</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th class="shopping-item">Item Type</th>
-                    <th class="shopping-stats">Desired Stats</th>
-                    <th>Vendor & Location</th>
-                    <th>Level (Low/Rec/High)</th>
-                    <th>Notes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td class="shopping-item">Shield with +Resistances</td><td class="shopping-stats">All Resistances +20-30</td><td>Jamella Hell, Malah Hell</td><td>30 / 60 / 90</td><td>Great for survivability</td></tr>
-            </tbody>
-        </table>
-    </details>
-
-    <!-- Ubers Guide Section -->
-    <details id="ubers">
-        <summary>Ubers Guide</summary>
-        <h3>Accessing Uber Tristram</h3>
-        <ol>
-            <li>Collect Keys in Hell difficulty:
-                <ul>
-                    <li>Terror Key: The Countess</li>
-                    <li>Hate Key: The Summoner</li>
-                    <li>Destruction Key: Nihlathak</li>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">D2R Guide</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#runes">Runes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#runewords">Runewords</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cube">Cube Recipes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#breakpoints">Stat Breakpoints</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#crafting">Crafting</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#shopping">Shopping Guide</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ubers">Ubers Guide</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#maps">Maps</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#builds">Builds</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ladder">Ladder Start Tutorial</a></li>
                 </ul>
-            </li>
-            <li>Use the Horadric Cube to combine 1 of each key to create the portal to Uber Tristram.</li>
-        </ol>
-        <h3>Strategies for Defeating Ubers</h3>
-        <p>Uber Tristram is home to Uber Diablo, Uber Mephisto, and Uber Baal. Here are some strategies to defeat them:</p>
-        <ul>
-            <li><strong>Life Tap</strong>: Use a weapon with Life Tap or have a Necromancer cast it to sustain your health.</li>
-            <li><strong>Crushing Blow</strong>: Gear with Crushing Blow is essential for reducing the bosses' health quickly.</li>
-            <li><strong>Resistances</strong>: Max out your resistances, especially fire and lightning, to survive their attacks.</li>
-            <li><strong>Mobility</strong>: Use teleport or fast run/walk to avoid being surrounded by minions.</li>
-            <li><strong>Builds</strong>: Smiter Paladin, Kicksin Assassin, and Zealot Paladin are popular builds for ubers.</li>
-        </ul>
-        <h3>Recommended Gear</h3>
-        <ul>
-            <li><strong>Weapon</strong>: Last Wish, Grief, or a wand with Life Tap charges.</li>
-            <li><strong>Shield</strong>: Herald of Zakarum, Stormshield, or a high-resistance shield.</li>
-            <li><strong>Armor</strong>: Chains of Honor, Enigma, or Fortitude for damage and survivability.</li>
-            <li><strong>Helm</strong>: Guillaume's Face for Crushing Blow, Vampire Gaze for damage reduction.</li>
-            <li><strong>Boots</strong>: Goblin Toe or Gore Rider for Crushing Blow.</li>
-            <li><strong>Amulet/Rings</strong>: Highlord's Wrath, Raven Frost, and Bul-Kathos' Wedding Band for stats and resistances.</li>
-        </ul>
-    </details>
+            </div>
+        </div>
+    </nav>
 
-    <!-- Maps Section -->
-    <details id="maps">
-        <summary>Maps</summary>
-        <h3>Tower and Catacombs Maps</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Area</th>
-                    <th>Normal Level</th>
-                    <th>Nightmare Level</th>
-                    <th>Hell Level</th>
-                    <th>Direction</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>Black Marsh</td><td>6</td><td>38</td><td>69</td><td>Follow path</td></tr>
-                <tr><td>Tower Cellar Level 1</td><td>7</td><td>38</td><td>75</td><td>Left</td></tr>
-                <tr><td>Tower Cellar Level 2</td><td>7</td><td>39</td><td>76</td><td>Left</td></tr>
-                <tr><td>Tower Cellar Level 3</td><td>7</td><td>40</td><td>77</td><td>Left</td></tr>
-                <tr><td>Tower Cellar Level 4</td><td>7</td><td>41</td><td>78</td><td>Left</td></tr>
-                <tr><td>Tower Cellar Level 5</td><td>7</td><td>42</td><td>79</td><td></td></tr>
-                <tr><td>Cathedral</td><td>11</td><td>42</td><td>72</td><td>Right</td></tr>
-                <tr><td>Catacombs Level 1</td><td>11</td><td>42</td><td>72</td><td></td></tr>
-                <tr><td>Catacombs Level 2</td><td>11</td><td>42</td><td>73</td><td>wp→Right</td></tr>
-                <tr><td>Catacombs Level 3</td><td>12</td><td>43</td><td>73</td><td></td></tr>
-            </tbody>
-        </table>
-        <h3>Sewers Map</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Area</th>
-                    <th>Normal Level</th>
-                    <th>Nightmare Level</th>
-                    <th>Hell Level</th>
-                    <th>Direction</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>Sewers Level 1</td><td>13</td><td>43</td><td>84</td><td>Follow the path to the right</td></tr>
-                <tr><td>Sewers Level 2</td><td>14</td><td>44</td><td>85</td><td>Take the left turn at the intersection</td></tr>
-                <tr><td>Sewers Level 3</td><td>15</td><td>45</td><td>86</td><td>Straight ahead to Radament</td></tr>
-            </tbody>
-        </table>
-        <h3>Arcane Sanctuary Map</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Area</th>
-                    <th>Normal Level</th>
-                    <th>Nightmare Level</th>
-                    <th>Hell Level</th>
-                    <th>Direction</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>Arcane Sanctuary</td><td>17</td><td>48</td><td>79</td><td>Random layout; look for the Summoner</td></tr>
-            </tbody>
-        </table>
-        <h3>Chaos Sanctuary Map</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Area</th>
-                    <th>Normal Level</th>
-                    <th>Nightmare Level</th>
-                    <th>Hell Level</th>
-                    <th>Direction</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>Chaos Sanctuary</td><td>28</td><td>57</td><td>85</td><td>Clear seals to summon Diablo</td></tr>
-            </tbody>
-        </table>
-    </details>
+    <div class="container">
+        <h1>Diablo 2 Resurrected Comprehensive Guide</h1>
+        <input type="text" id="search" class="form-control mb-3" placeholder="Search the guide..." oninput="searchFunction()">
 
+        <!-- Runes Section -->
+        <details id="runes">
+            <summary>Runes</summary>
+            <h2>Runes</h2>
+            <p>Runes are small stones inscribed with magical glyphs that can be inserted into socketed items. They provide various bonuses and are essential for creating runewords.</p>
+            <h3>Low Runes (El to Ist)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rune</th>
+                        <th>Weapon Properties</th>
+                        <th>Armor/Helm/Shield Properties</th>
+                        <th>How to Obtain</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="rune">El</td><td>+50 AR, +1 Light Radius</td><td>+15 Def, +1 Light Radius</td><td>Normal Countess, drops</td></tr>
+                    <tr><td class="rune">Eld</td><td>+75% Damage to Undead, +50 AR vs. Undead</td><td>+15% Stamina Regen, +7% Block (Shields)</td><td>Normal Countess, 3 El</td></tr>
+                    <tr><td class="rune">Tir</td><td>+2 Mana per Kill</td><td>+2 Mana per Kill</td><td>Normal Countess, 3 Eld</td></tr>
+                    <tr><td class="rune">Nef</td><td>Knockback</td><td>+30 Def vs. Missile</td><td>Normal Countess, 3 Tir</td></tr>
+                    <tr><td class="rune">Eth</td><td>-25% Target Def</td><td>+15% Mana Regen</td><td>Normal Countess, 3 Nef</td></tr>
+                    <tr><td class="rune">Ith</td><td>+9 Max Damage</td><td>15% Damage to Mana</td><td>Normal Countess, 3 Eth</td></tr>
+                    <tr><td class="rune">Tal</td><td>+75 Poison Dmg (5s)</td><td>+35% Poison Res</td><td>Normal Countess, 3 Ith</td></tr>
+                    <tr><td class="rune">Ral</td><td>+5-30 Fire Dmg</td><td>+35% Fire Res</td><td>Normal Countess, 3 Tal</td></tr>
+                    <tr><td class="rune">Ort</td><td>+1-50 Lightning Dmg</td><td>+35% Lightning Res</td><td>Normal Countess, 3 Ral</td></tr>
+                    <tr><td class="rune">Thul</td><td>+3-14 Cold Dmg (3s)</td><td>+35% Cold Res</td><td>Normal Countess, 3 Ort + Chipped Topaz</td></tr>
+                    <tr><td class="rune">Amn</td><td>7% Life Steal</td><td>Attacker Takes 14 Dmg</td><td>Nightmare Countess, 3 Thul + Chipped Amethyst</td></tr>
+                    <tr><td class="rune">Sol</td><td>+9 Min Damage</td><td>-7 Damage Taken</td><td>Nightmare Countess, 3 Amn + Chipped Sapphire</td></tr>
+                    <tr><td class="rune">Shael</td><td>+20% IAS</td><td>+20% FHR</td><td>Nightmare Countess, 3 Sol + Chipped Ruby</td></tr>
+                    <tr><td class="rune">Dol</td><td>25% Flee</td><td>+7 Life Regen</td><td>Nightmare Countess, 3 Shael + Chipped Emerald</td></tr>
+                    <tr><td class="rune">Hel</td><td>-20% Requirements</td><td>-15% Requirements</td><td>Nightmare Countess, 3 Dol + Chipped Diamond</td></tr>
+                    <tr><td class="rune">Io</td><td>+10 Vitality</td><td>+10 Vitality</td><td>Nightmare Countess, 3 Hel + Flawed Topaz</td></tr>
+                    <tr><td class="rune">Lum</td><td>+10 Energy</td><td>+10 Energy</td><td>Nightmare Countess, 3 Io + Flawed Amethyst</td></tr>
+                    <tr><td class="rune">Ko</td><td>+10 Dexterity</td><td>+10 Dexterity</td><td>Nightmare Countess, 3 Lum + Flawed Sapphire</td></tr>
+                    <tr><td class="rune">Fal</td><td>+10 Strength</td><td>+10 Strength</td><td>Nightmare Countess, 3 Ko + Flawed Ruby</td></tr>
+                    <tr><td class="rune">Lem</td><td>+75% Gold</td><td>+50% Gold</td><td>Hell Countess, 3 Fal + Flawed Emerald</td></tr>
+                    <tr><td class="rune">Pul</td><td>+75% Dmg to Demons, +100 AR vs. Demons</td><td>+30% Def</td><td>Hell Countess, 3 Lem + Flawed Diamond</td></tr>
+                    <tr><td class="rune">Um</td><td>25% Open Wounds</td><td>All Res +15 (Armor/Helm), +22 (Shields)</td><td>Hell Countess, 2 Pul + Topaz</td></tr>
+                    <tr><td class="rune">Mal</td><td>Prevent Monster Heal</td><td>-7 Magic Dmg</td><td>Hell Countess, 2 Um + Amethyst</td></tr>
+                    <tr><td class="rune">Ist</td><td>+30% MF</td><td>+25% MF</td><td>Hell Countess, 2 Mal + Sapphire</td></tr>
+                </tbody>
+            </table>
+            <h3>High Runes (Gul to Zod)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rune</th>
+                        <th>Weapon Properties</th>
+                        <th>Armor/Helm/Shield Properties</th>
+                        <th>How to Obtain</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="rune">Gul</td><td>+20% AR</td><td>+5% Max Poison Resist</td><td>Hell Countess, 2 Ist + Ruby</td></tr>
+                    <tr><td class="rune">Vex</td><td>7% Mana Steal</td><td>+5% Max Fire Resist</td><td>Hell Countess, 2 Gul + Emerald</td></tr>
+                    <tr><td class="rune">Ohm</td><td>+50% Enhanced Dmg</td><td>+5% Max Cold Resist</td><td>Hell Countess, 2 Vex + Diamond</td></tr>
+                    <tr><td class="rune">Lo</td><td>20% Deadly Strike</td><td>+5% Max Lightning Resist</td><td>Hell Countess, 2 Ohm + Flawless Topaz</td></tr>
+                    <tr><td class="rune">Sur</td><td>Hit Blinds Target</td><td>+5% Max Mana (Armor/Helm), +50 Mana (Shields)</td><td>Hell Countess, 2 Lo + Flawless Amethyst</td></tr>
+                    <tr><td class="rune">Ber</td><td>20% Crushing Blow</td><td>-8% Dmg Taken</td><td>Hell Countess, 2 Sur + Flawless Sapphire</td></tr>
+                    <tr><td class="rune">Jah</td><td>Ignore Target Def</td><td>+5% Max Life (Armor/Helm), +50 Life (Shields)</td><td>Hell Countess, 2 Ber + Flawless Ruby</td></tr>
+                    <tr><td class="rune">Cham</td><td>Freeze Target +3</td><td>Cannot Be Frozen</td><td>Hell Countess, 2 Jah + Flawless Emerald</td></tr>
+                    <tr><td class="rune">Zod</td><td>Indestructible</td><td>Indestructible</td><td>Hell drops, rare</td></tr>
+                </tbody>
+            </table>
+        </details>
+
+        <!-- Runewords Section -->
+        <details id="runewords">
+            <summary>Runewords</summary>
+            <h2>Runewords</h2>
+            <p>Runewords are powerful combinations of runes inserted into socketed items. Below is a list of popular runewords with their required runes, item types, effects, and recommended bases.</p>
+            <h3>Creating Runewords</h3>
+            <p>To create a runeword, insert the runes in the exact order into a non-magical socketed item of the correct type. The item must have the exact number of sockets required by the runeword.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Runeword</th>
+                        <th>Runes</th>
+                        <th>Item Type</th>
+                        <th>Effects</th>
+                        <th>Recommended Bases</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="runeword">Ancient's Pledge</td><td class="rune">Ral Ort Tal</td><td>3-socket Shields</td><td>+50% Enhanced Defense, Cold Resist +43%, Fire Resist +48%, Lightning Resist +48%, Poison Resist +48%, 10% Damage Taken Goes to Mana</td><td>Any 3-socket shield (e.g., Large Shield)</td></tr>
+                    <tr><td class="runeword">Spirit</td><td class="rune">Tal Thul Ort Amn</td><td>4-socket Swords/Shields</td><td>+2 To All Skills, +25-35% FCR, +55% FHR, +250 Def vs. Missile, +22 Vitality, +89-112 Mana</td><td>Swords: Broad Sword; Shields: Monarch</td></tr>
+                    <tr><td class="runeword">Insight</td><td class="rune">Ral Tir Tal Sol</td><td>4-socket Polearms/Staves</td><td>Level 12-17 Meditation Aura, +35% FCR, +200-260% Enhanced Damage, +9 Min Damage</td><td>Polearms: Thresher (for mercs)</td></tr>
+                    <tr><td class="runeword">Enigma</td><td class="rune">Jah Ith Ber</td><td>3-socket Armor</td><td>+2 To All Skills, +45% Faster Run/Walk, +1 To Teleport, +750-775 Defense, + (0.75 Per Level) Strength</td><td>Mage Plate, Dusk Shroud</td></tr>
+                    <tr><td class="runeword">Infinity</td><td class="rune">Ber Mal Ber Ist</td><td>4-socket Polearms</td><td>Level 12 Conviction Aura, +255-325% Enhanced Damage, -45-55% Enemy Lightning Resist</td><td>Ethereal Thresher (for mercs)</td></tr>
+                    <tr><td class="runeword">Call to Arms</td><td class="rune">Amn Ral Mal Ist Ohm</td><td>5-socket Weapons</td><td>+1 To All Skills, +40% IAS, +250-290% Enhanced Damage, +2-6 Battle Command</td><td>Crystal Sword, Flail</td></tr>
+                </tbody>
+            </table>
+        </details>
+
+        <!-- Cube Recipes Section -->
+        <details id="cube">
+            <summary>Cube Recipes</summary>
+            <h2>Cube Recipes</h2>
+            <p>The Horadric Cube is a tool for transmuting items. Here are some useful recipes.</p>
+            <h3>Rune Upgrades</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ingredients</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="cube-ingredients">3 El Runes</td><td class="cube-result">1 Eld Rune</td></tr>
+                    <tr><td class="cube-ingredients">3 Eld Runes</td><td class="cube-result">1 Tir Rune</td></tr>
+                    <tr><td class="cube-ingredients">3 Thul Runes + 1 Chipped Topaz</td><td class="cube-result">1 Amn Rune</td></tr>
+                </tbody>
+            </table>
+            <h3>Gem Upgrades</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ingredients</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="cube-ingredients">3 Chipped Gems (same type)</td><td class="cube-result">1 Flawed Gem (same type)</td></tr>
+                    <tr><td class="cube-ingredients">3 Flawed Gems (same type)</td><td class="cube-result">1 Normal Gem (same type)</td></tr>
+                </tbody>
+            </table>
+            <h3>Other Recipes</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ingredients</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="cube-ingredients">1 Ral Rune + 1 Amn Rune + 1 Perfect Amethyst + Normal Weapon</td><td class="cube-result">Socketed Weapon</td></tr>
+                    <tr><td class="cube-ingredients">1 Tal Rune + 1 Thul Rune + 1 Perfect Topaz + Normal Body Armor</td><td class="cube-result">Socketed Armor</td></tr>
+                </tbody>
+            </table>
+        </details>
+
+        <!-- Stat Breakpoints Section -->
+        <details id="breakpoints">
+            <summary>Stat Breakpoints</summary>
+            <h2>Stat Breakpoints</h2>
+            <p>Faster Cast Rate (FCR) and Faster Hit Recovery (FHR) breakpoints optimize performance. Here’s an example for the Sorceress.</p>
+            <h3>Sorceress</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>FCR %</th>
+                        <th>Frames</th>
+                        <th>FHR %</th>
+                        <th>Frames</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>0</td><td>13</td><td>0</td><td>15</td></tr>
+                    <tr><td>9</td><td>12</td><td>5</td><td>14</td></tr>
+                    <tr><td>20</td><td>11</td><td>9</td><td>13</td></tr>
+                    <tr><td>37</td><td>10</td><td>14</td><td>12</td></tr>
+                    <tr><td>63</td><td>9</td><td>20</td><td>11</td></tr>
+                </tbody>
+            </table>
+        </details>
+
+        <!-- Crafting Section -->
+        <details id="crafting">
+            <summary>Crafting</summary>
+            <h2>Crafting</h2>
+            <p>Craft items using the Horadric Cube. Item level (ilvl) is half your character level plus half the base item’s level.</p>
+            <h3>Blood Crafts</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="crafting-item">Item Type</th>
+                        <th class="crafting-ingredients">Ingredients</th>
+                        <th>Fixed Affixes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="crafting-item">Blood Gloves</td><td class="crafting-ingredients">Magic Heavy Gloves + Jewel + Nef Rune + Perfect Ruby</td><td>5-10% Crushing Blow, 1-3% Life Steal, +10-20 Life</td></tr>
+                </tbody>
+            </table>
+        </details>
+
+        <!-- Shopping Guide Section -->
+        <details id="shopping">
+            <summary>Shopping Guide</summary>
+            <h2>Shopping Guide</h2>
+            <p>Vendors sell useful items for early game or specific builds.</p>
+            <h3>Weapons</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="shopping-item">Item Type</th>
+                        <th class="shopping-stats">Desired Stats</th>
+                        <th>Vendor & Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="shopping-item">Wand of Life Tap</td><td class="shopping-stats">Life Tap</td><td>Malah (Hell)</td></tr>
+                    <tr><td class="shopping-item">+3 Skill Tree Weapons</td><td class="shopping-stats">+3 to [Skill Tree]</td><td>Drognan (Nightmare)</td></tr>
+                </tbody>
+            </table>
+        </details>
+
+        <!-- Ubers Guide Section -->
+        <details id="ubers">
+            <summary>Ubers Guide</summary>
+            <h2>Ubers Guide</h2>
+            <p>Uber Tristram is an endgame challenge. Here’s how to tackle it.</p>
+            <h3>Accessing Uber Tristram</h3>
+            <ol>
+                <li>Collect Keys in Hell:
+                    <ul>
+                        <li>Terror Key: The Countess</li>
+                        <li>Hate Key: The Summoner</li>
+                        <li>Destruction Key: Nihlathak</li>
+                    </ul>
+                </li>
+                <li>Combine 1 of each key in the Cube to open the portal.</li>
+            </ol>
+            <h3>Strategies</h3>
+            <ul>
+                <li><strong>Life Tap</strong>: Use a wand or curse for sustain.</li>
+                <li><strong>Crushing Blow</strong>: Essential for boss damage.</li>
+                <li><strong>Resistances</strong>: Max fire and lightning resists.</li>
+            </ul>
+        </details>
+
+        <!-- Maps Section -->
+        <details id="maps">
+            <summary>Maps</summary>
+            <h2>Maps</h2>
+            <p>Area levels and directions for key farming spots.</p>
+            <h3>Tower and Catacombs</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Normal Level</th>
+                        <th>Nightmare Level</th>
+                        <th>Hell Level</th>
+                        <th>Direction</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Black Marsh</td><td>6</td><td>38</td><td>69</td><td>Follow path</td></tr>
+                    <tr><td>Tower Cellar Level 1</td><td>7</td><td>38</td><td>75</td><td>Left</td></tr>
+                </tbody>
+            </table>
+        </details>
+
+        <!-- Builds Section -->
+        <details id="builds">
+            <summary>Builds</summary>
+            <h2>Builds</h2>
+            <p>Popular builds with skills, stats, and gear.</p>
+            <h3>Sorceress - Blizzard</h3>
+            <p><strong>Skills</strong>: Blizzard, Glacial Spike, Cold Mastery</p>
+            <p><strong>Stats</strong>: Strength for gear, rest Vitality</p>
+            <p><strong>Gear</strong>: Spirit, Tal Rasha’s set</p>
+            <p><strong>Playstyle</strong>: Cast Blizzard for AoE damage</p>
+        </details>
+
+        <!-- Ladder Start Tutorial Section -->
+        <details id="ladder">
+            <summary>Ladder Start Tutorial</summary>
+            <h2>Ladder Start Tutorial</h2>
+            <p>Tips for starting a ladder season.</p>
+            <h3>Sorceress</h3>
+            <p><strong>Leveling</strong>: Fire Bolt → Fire Ball → Blizzard</p>
+            <p><strong>Gear</strong>: Stealth (Tal + Eth), Leaf (Tir + Ral)</p>
+            <p><strong>Strategies</strong>: Farm Countess for runes</p>
+        </details>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         function searchFunction() {
             var input = document.getElementById('search').value.toLowerCase();
-            var highlighted = document.querySelectorAll('.highlight');
-            highlighted.forEach(function(el) {
-                el.classList.remove('highlight');
-            });
-            if (input === '') return;
             var elements = document.querySelectorAll('td, p, li, h3, summary');
             elements.forEach(function(el) {
+                el.classList.remove('highlight');
                 if (el.textContent.toLowerCase().includes(input)) {
                     el.classList.add('highlight');
                 }
