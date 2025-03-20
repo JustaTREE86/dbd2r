@@ -66,6 +66,13 @@
             background-color: #333;
             color: #fff;
             border: 1px solid #d4a017;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .highlight {
+            background-color: yellow;
+            color: black;
         }
         @media (max-width: 600px) {
             table {
@@ -84,6 +91,7 @@
         <strong>Table of Contents:</strong> 
         <a href="#runes">Runes</a> | 
         <a href="#runewords">Runewords</a> | 
+        <a href="#runeword-bases">Recommended Runeword Bases</a> | 
         <a href="#cube">Cube Recipes</a> | 
         <a href="#breakpoints">Stat Breakpoints</a> | 
         <a href="#shopping">Shopping Guide</a> | 
@@ -95,9 +103,9 @@
     </div>
 
     <!-- Runes Section -->
-    <details id="runes" open>
+    <details id="runes">
         <summary>Runes</summary>
-        <p>Data sourced from Maxroll.gg, Diablo Wiki, and D2JSP.</p>
+        <h3>Low Runes (El to Ist)</h3>
         <table>
             <thead>
                 <tr>
@@ -132,6 +140,19 @@
                 <tr><td>Um</td><td>25% Open Wounds</td><td>All Res +15 (Armor/Helm), +22 (Shields)</td><td>Hell Countess, 2 Pul + Topaz</td></tr>
                 <tr><td>Mal</td><td>Prevent Monster Heal</td><td>-7 Magic Dmg</td><td>Hell Countess, 2 Um + Amethyst</td></tr>
                 <tr><td>Ist</td><td>+30% MF</td><td>+25% MF</td><td>Hell Countess, 2 Mal + Sapphire</td></tr>
+            </tbody>
+        </table>
+        <h3>High Runes (Gul to Zod)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rune</th>
+                    <th>Weapon Properties</th>
+                    <th>Armor/Helm/Shield Properties</th>
+                    <th>How to Obtain</th>
+                </tr>
+            </thead>
+            <tbody>
                 <tr><td>Gul</td><td>+20% AR</td><td>+5% Max Poison Resist</td><td>Hell Countess, 2 Ist + Ruby</td></tr>
                 <tr><td>Vex</td><td>7% Mana Steal</td><td>+5% Max Fire Resist</td><td>Hell Countess, 2 Gul + Emerald</td></tr>
                 <tr><td>Ohm</td><td>+50% Enhanced Dmg</td><td>+5% Max Cold Resist</td><td>Hell Countess, 2 Vex + Diamond</td></tr>
@@ -145,7 +166,7 @@
         </table>
     </details>
 
-    <!-- Runewords Section -->
+    <!-- Runewords Section (Placeholder) -->
     <details id="runewords">
         <summary>Runewords</summary>
         <p>All runewords sourced from Maxroll.gg and Diablo Wiki.</p>
@@ -159,592 +180,148 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td>Ancient's Pledge</td><td>Ral Ort Tal</td><td>3-socket Shields</td><td>+50% Enhanced Defense, All Resistances +48, +10% Damage Taken Goes to Mana</td></tr>
-                <tr><td>Beast</td><td>Ber Tir Um Mal Lum</td><td>5-socket Axes/Scepters/Hammers</td><td>Level 9 Fanaticism Aura, +40% IAS, +240-270% Enhanced Damage, +3 Werebear</td></tr>
-                <tr><td>Black</td><td>Thul Io Nef</td><td>3-socket Clubs/Hammers/Maces</td><td>+120% Enhanced Damage, +40% Crushing Blow, +15% IAS, +200 Attack Rating</td></tr>
-                <tr><td>Bone</td><td>Sol Um Um</td><td>3-socket Body Armor</td><td>15% Chance to Cast Level 10 Bone Armor, +2 Necromancer Skills, +100-150 Mana</td></tr>
-                <tr><td>Brand</td><td>Jah Lo Mal Gul</td><td>4-socket Missile Weapons</td><td>35% Chance to Cast Level 14 Amplify Damage, +260-340% Enhanced Damage, 20% Deadly Strike</td></tr>
-                <tr><td>Breath of the Dying</td><td>Vex Hel El Eld Zod Eth</td><td>6-socket Weapons</td><td>50% Chance to Cast Level 20 Poison Nova, Indestructible, +60% IAS, +350-400% Enhanced Damage</td></tr>
-                <tr><td>Bramble</td><td>Ral Ohm Sur Eth</td><td>4-socket Body Armor</td><td>Level 15-21 Thorns Aura, +25-50% Poison Skill Damage, +300 Defense</td></tr>
-                <tr><td>Call to Arms</td><td>Amn Ral Mal Ist Ohm</td><td>5-socket Weapons</td><td>+1 All Skills, +40% IAS, +250-290% Enhanced Damage, +2-6 Battle Command</td></tr>
-                <tr><td>Chains of Honor</td><td>Dol Um Ber Ist</td><td>4-socket Body Armor</td><td>+2 All Skills, +200% Damage to Demons, +100% Damage to Undead, All Resistances +65</td></tr>
-                <tr><td>Chaos</td><td>Fal Ohm Um</td><td>3-socket Claws</td><td>9% Chance to Cast Level 11 Frozen Orb, +35% IAS, +290-340% Enhanced Damage</td></tr>
-                <tr><td>Crescent Moon</td><td>Shael Um Tir</td><td>3-socket Axes/Swords/Polearms</td><td>10% Chance to Cast Level 17 Chain Lightning, -35% Enemy Lightning Resist, +20% IAS</td></tr>
-                <tr><td>Delirium</td><td>Lem Ist Io</td><td>3-socket Helms</td><td>1% Chance to Cast Level 50 Delirium, +2 All Skills, +261 Defense</td></tr>
-                <tr><td>Destruction</td><td>Vex Lo Ber Jah Ko</td><td>5-socket Polearms/Swords</td><td>23% Chance to Cast Level 12 Volcano, +350-400% Enhanced Damage, 15% Chance to Cast Level 10 Meteor</td></tr>
-                <tr><td>Doom</td><td>Hel Ohm Um Lo Cham</td><td>5-socket Axes/Polearms/Hammers</td><td>5% Chance to Cast Level 18 Volcano, Level 12 Holy Freeze Aura, +2 All Skills</td></tr>
-                <tr><td>Dragon</td><td>Sur Lo Sol</td><td>3-socket Body Armor/Shields</td><td>20% Chance to Cast Level 18 Venom, Level 14 Holy Fire Aura, +360 Defense</td></tr>
-                <tr><td>Dream</td><td>Io Jah Pul</td><td>3-socket Helms/Shields</td><td>10% Chance to Cast Level 15 Confuse, Level 13 Holy Shock Aura, +20-30% FHR</td></tr>
-                <tr><td>Duress</td><td>Shael Um Thul</td><td>3-socket Body Armor</td><td>+40% FHR, +10-20% Enhanced Damage, +15% Crushing Blow, +33% Open Wounds</td></tr>
-                <tr><td>Edge</td><td>Tir Tal Amn</td><td>3-socket Missile Weapons</td><td>Level 15 Thorns Aura, +35% IAS, +320-380% Damage to Demons</td></tr>
-                <tr><td>Enigma</td><td>Jah Ith Ber</td><td>3-socket Body Armor</td><td>+2 All Skills, +45% FRW, +1 Teleport, +750-775 Defense</td></tr>
-                <tr><td>Eternity</td><td>Amn Ber Ist Sol Sur</td><td>5-socket Melee Weapons</td><td>Indestructible, +260-310% Enhanced Damage, +50% Crushing Blow, Slows Target by 33%</td></tr>
-                <tr><td>Exile</td><td>Vex Ohm Ist Dol</td><td>4-socket Paladin Shields</td><td>15% Chance to Cast Level 5 Life Tap, Level 13-16 Defiance Aura, +220-260% Enhanced Defense</td></tr>
-                <tr><td>Faith</td><td>Ohm Jah Lem Eld</td><td>4-socket Missile Weapons</td><td>Level 12-15 Fanaticism Aura, +1-2 All Skills, +330% Enhanced Damage</td></tr>
-                <tr><td>Famine</td><td>Fal Ohm Ort Jah</td><td>4-socket Axes/Hammers</td><td>+30% IAS, +320-370% Enhanced Damage, +180-200 Magic Damage</td></tr>
-                <tr><td>Flickering Flame</td><td>Nef Pul Vex</td><td>3-socket Helms</td><td>Level 4-8 Resist Fire Aura, +3 Fire Skills, -10-15% Enemy Fire Resist</td></tr>
-                <tr><td>Fortitude</td><td>El Sol Dol Lo</td><td>4-socket Weapons/Body Armor</td><td>20% Chance to Cast Level 15 Chilling Armor, +300% Enhanced Damage, +200% Enhanced Defense</td></tr>
-                <tr><td>Fury</td><td>Jah Gul Eth</td><td>3-socket Melee Weapons</td><td>+40% IAS, +209% Enhanced Damage, 20% Deadly Strike, 66% Open Wounds</td></tr>
-                <tr><td>Gloom</td><td>Fal Um Pul</td><td>3-socket Body Armor</td><td>+10% FHR, +200-260% Enhanced Defense, All Resistances +45</td></tr>
-                <tr><td>Grief</td><td>Eth Tir Lo Mal Ral</td><td>5-socket Swords/Axes</td><td>+35% IAS, +340-400 Damage, -25% Target Defense, +10-15 Life per Hit</td></tr>
-                <tr><td>Hand of Justice</td><td>Sur Cham Amn Lo</td><td>4-socket Weapons</td><td>100% Chance to Cast Level 36 Blaze, Level 12 Firestorm, Level 16 Holy Fire Aura</td></tr>
-                <tr><td>Harmony</td><td>Tir Ith Sol Ko</td><td>4-socket Missile Weapons</td><td>Level 10 Vigor Aura, +200-275% Enhanced Damage, +9 Min/Max Damage</td></tr>
-                <tr><td>Heart of the Oak</td><td>Ko Vex Pul Thul</td><td>4-socket Staves/Maces</td><td>+3 All Skills, +40% FCR, +75% Damage to Demons, +100 AR vs. Demons</td></tr>
-                <tr><td>Honor</td><td>Amn El Ith Tir Sol</td><td>5-socket Melee Weapons</td><td>+160% Enhanced Damage, +250 Attack Rating, +10 Replenish Life, +1 All Skills</td></tr>
-                <tr><td>Ice</td><td>Amn Shael Jah Lo</td><td>4-socket Missile Weapons</td><td>20% Chance to Cast Level 18 Ice Blast, Level 18 Holy Freeze Aura, +25-30% Cold Skill Damage</td></tr>
-                <tr><td>Infinity</td><td>Ber Mal Ber Ist</td><td>4-socket Polearms</td><td>50% Chance to Cast Level 20 Chain Lightning, Level 12 Conviction Aura, +35% FRW</td></tr>
-                <tr><td>Insight</td><td>Ral Tir Tal Sol</td><td>4-socket Polearms/Staves</td><td>Level 12-17 Meditation Aura, +35% FCR, +200-260% Enhanced Damage</td></tr>
-                <tr><td>King's Grace</td><td>Amn Ral Thul</td><td>3-socket Swords/Scepters</td><td>+100% Enhanced Damage, +150 Attack Rating, +100% Damage to Demons</td></tr>
-                <tr><td>Kingslayer</td><td>Mal Um Gul Fal</td><td>4-socket Swords/Axes</td><td>+30% IAS, +230-270% Enhanced Damage, -25% Target Defense, 20% Crushing Blow</td></tr>
-                <tr><td>Last Wish</td><td>Jah Mal Jah Sur Jah Ber</td><td>6-socket Swords/Hammers/Axes</td><td>6% Chance to Cast Level 11 Fade, Level 18 Life Tap, 20% Crushing Blow</td></tr>
-                <tr><td>Lawbringer</td><td>Amn Lem Ko</td><td>3-socket Swords/Hammers/Scepters</td><td>20% Chance to Cast Level 15 Decrepify, Level 16-18 Sanctuary Aura</td></tr>
-                <tr><td>Leaf</td><td>Tir Ral</td><td>2-socket Staves</td><td>+3 Fire Skills, +3 Fire Bolt, +3 Inferno, +3 Warmth</td></tr>
-                <tr><td>Lionheart</td><td>Hel Lum Fal</td><td>3-socket Body Armor</td><td>+20% Enhanced Damage, +25 Strength, +15 Dexterity, +20 Vitality</td></tr>
-                <tr><td>Lore</td><td>Ort Sol</td><td>2-socket Helms</td><td>+1 All Skills, +10 Energy, +2 Mana per Kill, +30% Lightning Resist</td></tr>
-                <tr><td>Malice</td><td>Ith El Eth</td><td>3-socket Melee Weapons</td><td>+33% Enhanced Damage, +9 Max Damage, 100% Open Wounds, -25% Target Defense</td></tr>
-                <tr><td>Melody</td><td>Shael Ko Nef</td><td>3-socket Missile Weapons</td><td>+3 Bow and Crossbow Skills, +20% IAS, +50% Enhanced Damage</td></tr>
-                <tr><td>Memory</td><td>Lum Io Sol Eth</td><td>4-socket Staves</td><td>+3 Sorceress Skills, +33% FCR, +9 Min Damage, +50% Enhanced Defense</td></tr>
-                <tr><td>Mist</td><td>Cham Shael Gul Thul Ith</td><td>5-socket Missile Weapons</td><td>Level 8-12 Concentration Aura, +3 All Skills, +40% IAS, -40% Enemy Resistances</td></tr>
-                <tr><td>Myth</td><td>Hel Amn Nef</td><td>3-socket Body Armor</td><td>+2 Barbarian Skills, 10% Chance to Cast Level 1 Taunt, +30% Enhanced Defense</td></tr>
-                <tr><td>Nadir</td><td>Nef Tir</td><td>2-socket Helms</td><td>+50% Enhanced Defense, +10 Defense, +30 Defense vs. Missile</td></tr>
-                <tr><td>Oath</td><td>Shael Pul Mal Lum</td><td>4-socket Axes/Maces/Hammers</td><td>30% Chance to Cast Level 20 Bone Spirit, Indestructible, +50% IAS</td></tr>
-                <tr><td>Obedience</td><td>Hel Ko Thul Eth Fal</td><td>5-socket Polearms</td><td>30% Chance to Cast Level 21 Enchant, +370% Enhanced Damage, -25% Target Defense</td></tr>
-                <tr><td>Passion</td><td>Dol Ort Eld Lem</td><td>4-socket Weapons</td><td>+25% IAS, +160-210% Enhanced Damage, 75% Bonus to Attack Rating</td></tr>
-                <tr><td>Pattern</td><td>Tal Ort Thul</td><td>3-socket Claws</td><td>+30% FHR, +40-80% Enhanced Damage, +10 Dexterity, All Resistances +15</td></tr>
-                <tr><td>Peace</td><td>Shael Thul Amn</td><td>3-socket Body Armor</td><td>2% Chance to Cast Level 15 Valkyrie, +2 Amazon Skills, +20% FHR</td></tr>
-                <tr><td>Phoenix</td><td>Vex Vex Lo Jah</td><td>4-socket Weapons/Shields</td><td>100% Chance to Cast Level 40 Blaze, Level 10-15 Redemption Aura, +350-400% Enhanced Damage</td></tr>
-                <tr><td>Plague</td><td>Cham Fal Um</td><td>3-socket Swords/Claws/Daggers</td><td>20% Chance to Cast Level 12 Lower Resist, +1-2 All Skills, +20% IAS</td></tr>
-                <tr><td>Pride</td><td>Cham Sur Io Lo</td><td>4-socket Polearms</td><td>25% Chance to Cast Level 17 Fire Wall, Level 16-20 Concentration Aura</td></tr>
-                <tr><td>Principle</td><td>Ral Gul Eld</td><td>3-socket Body Armor</td><td>100% Chance to Cast Level 5 Holy Bolt, +2 Paladin Skills, +50% Enhanced Defense</td></tr>
-                <tr><td>Prudence</td><td>Mal Tir</td><td>2-socket Body Armor</td><td>+25% FHR, +140-170% Enhanced Defense, All Resistances +25-35</td></tr>
-                <tr><td>Radiance</td><td>Nef Sol Ith</td><td>3-socket Helms</td><td>+75% Enhanced Defense, +30 Defense vs. Missile, +10 Energy</td></tr>
-                <tr><td>Rain</td><td>Ort Mal Ith</td><td>3-socket Body Armor</td><td>5% Chance to Cast Level 15 Cyclone Armor, +2 Druid Skills, +100-150 Mana</td></tr>
-                <tr><td>Rhyme</td><td>Shael Eth</td><td>2-socket Shields</td><td>+20% Increased Block Rate, +40% FBR, All Resistances +25, Cannot Be Frozen</td></tr>
-                <tr><td>Rift</td><td>Hel Ko Lem Gul</td><td>4-socket Polearms/Scepters</td><td>20% Chance to Cast Level 16 Tornado, Level 21 Frozen Orb, +160-250 Magic Damage</td></tr>
-                <tr><td>Sanctuary</td><td>Ko Ko Mal</td><td>3-socket Shields</td><td>+20% FHR, +20% FBR, +130-160% Enhanced Defense, All Resistances +50-70</td></tr>
-                <tr><td>Silence</td><td>Dol Eld Hel Ist Tir Vex</td><td>6-socket Weapons</td><td>+2 All Skills, +20% IAS, +20% FHR, +200% Enhanced Damage</td></tr>
-                <tr><td>Smoke</td><td>Nef Lum</td><td>2-socket Body Armor</td><td>+75% Enhanced Defense, +280 Defense vs. Missile, All Resistances +50</td></tr>
-                <tr><td>Spirit</td><td>Tal Thul Ort Amn</td><td>4-socket Swords/Shields</td><td>+2 All Skills, +25-35% FCR, +55% FHR, +250 Defense vs. Missile</td></tr>
-                <tr><td>Splendor</td><td>Eth Lum</td><td>2-socket Shields</td><td>+1 All Skills, +20% FCR, +20% FBR, +60-100% Enhanced Defense</td></tr>
-                <tr><td>Stealth</td><td>Tal Eth</td><td>2-socket Body Armor</td><td>+25% FRW, +25% FCR, +15 Dexterity, Poison Resist +30%</td></tr>
-                <tr><td>Steel</td><td>Tir El</td><td>2-socket Swords/Axes/Maces</td><td>+25% IAS, +20% Enhanced Damage, +50 Attack Rating</td></tr>
-                <tr><td>Stone</td><td>Shael Um Pul Lum</td><td>4-socket Body Armor</td><td>+60% FHR, +250-290% Enhanced Defense, +300 Defense vs. Missile</td></tr>
-                <tr><td>Strength</td><td>Amn Tir</td><td>2-socket Melee Weapons</td><td>+35% Enhanced Damage, 7% Life Steal, +20 Strength</td></tr>
-                <tr><td>Treachery</td><td>Shael Thul Lem</td><td>3-socket Body Armor</td><td>5% Chance to Cast Level 15 Fade, +45% IAS, +20% FHR</td></tr>
-                <tr><td>Unbending Will</td><td>Fal Io Ith Eld El Hel</td><td>6-socket Swords</td><td>18% Chance to Cast Level 18 Taunt, +3 Combat Skills (Barbarian), +20-30% IAS</td></tr>
-                <tr><td>Venom</td><td>Tal Dol Mal</td><td>3-socket Weapons</td><td>Hit Causes Monster to Flee 25%, +273 Poison Damage (5s), 7% Mana Steal</td></tr>
-                <tr><td>Voice of Reason</td><td>Lem Ko El Eld</td><td>4-socket Swords/Maces</td><td>15% Chance to Cast Level 13 Frozen Orb, +220-350% Damage to Demons</td></tr>
-                <tr><td>Wealth</td><td>Lem Ko Tir</td><td>3-socket Body Armor</td><td>+300% Extra Gold, +100% Magic Find, +10 Dexterity</td></tr>
-                <tr><td>White</td><td>Dol Io</td><td>2-socket Wands</td><td>+3 Poison and Bone Skills, +20% FCR, +2 Bone Spear, +4 Skeleton Mastery</td></tr>
-                <tr><td>Wind</td><td>Sur El</td><td>2-socket Melee Weapons</td><td>10% Chance to Cast Level 9 Tornado, +20% FRW, +40% IAS</td></tr>
-                <tr><td>Wisdom</td><td>Pul Ith Eld</td><td>3-socket Helms</td><td>+33% Piercing Attack, +15-25% Bonus to Attack Rating, 5% Mana Stolen per Hit</td></tr>
-                <tr><td>Wrath</td><td>Pul Lum Ber Mal</td><td>4-socket Missile Weapons</td><td>30% Chance to Cast Level 1 Decrepify, +300-330% Enhanced Damage, +50% IAS</td></tr>
-                <tr><td>Zephyr</td><td>Ort Eth</td><td>2-socket Missile Weapons</td><td>+33% Enhanced Damage, +66 Attack Rating, +25% FRW, 7% Chance to Cast Level 1 Twister</td></tr>
+                <!-- Add your existing runewords data here -->
+                <tr><td>Spirit</td><td>TalThulOrtAmn</td><td>Swords/Shields</td><td>+2 Skills, +25-35% FCR, +55% FHR, +250 Def vs. Missile, +22 Vit, +89-112 Mana, Magic Absorb</td></tr>
+                <!-- Add more runewords as needed -->
             </tbody>
         </table>
     </details>
 
-    <!-- Cube Recipes Section -->
-    <details id="cube">
-        <summary>Horadric Cube Recipes</summary>
-        <p>Sourced from Diablo Wiki and Maxroll.gg.</p>
+    <!-- Recommended Runeword Bases Section -->
+    <details id="runeword-bases">
+        <summary>Recommended Runeword Bases</summary>
+        <h3>Early Ladder Runewords (Runes Lem and Lower)</h3>
         <table>
             <thead>
                 <tr>
-                    <th>Ingredients</th>
-                    <th>Result</th>
+                    <th>Runeword</th>
+                    <th>Runes</th>
+                    <th>Recommended Bases</th>
                 </tr>
             </thead>
             <tbody>
-                <!-- Rune Upgrades -->
-                <tr><td>3 El Runes</td><td>1 Eld Rune</td></tr>
-                <tr><td>3 Eld Runes</td><td>1 Tir Rune</td></tr>
-                <tr><td>3 Tir Runes</td><td>1 Nef Rune</td></tr>
-                <tr><td>3 Nef Runes</td><td>1 Eth Rune</td></tr>
-                <tr><td>3 Eth Runes</td><td>1 Ith Rune</td></tr>
-                <tr><td>3 Ith Runes</td><td>1 Tal Rune</td></tr>
-                <tr><td>3 Tal Runes</td><td>1 Ral Rune</td></tr>
-                <tr><td>3 Ral Runes</td><td>1 Ort Rune</td></tr>
-                <tr><td>3 Ort Runes</td><td>1 Thul Rune</td></tr>
-                <tr><td>3 Thul Runes + 1 Chipped Topaz</td><td>1 Amn Rune</td></tr>
-                <tr><td>3 Amn Runes + 1 Chipped Amethyst</td><td>1 Sol Rune</td></tr>
-                <tr><td>3 Sol Runes + 1 Chipped Sapphire</td><td>1 Shael Rune</td></tr>
-                <tr><td>3 Shael Runes + 1 Chipped Ruby</td><td>1 Dol Rune</td></tr>
-                <tr><td>3 Dol Runes + 1 Chipped Emerald</td><td>1 Hel Rune</td></tr>
-                <tr><td>3 Hel Runes + 1 Chipped Diamond</td><td>1 Io Rune</td></tr>
-                <tr><td>3 Io Runes + 1 Flawed Topaz</td><td>1 Lum Rune</td></tr>
-                <tr><td>3 Lum Runes + 1 Flawed Amethyst</td><td>1 Ko Rune</td></tr>
-                <tr><td>3 Ko Runes + 1 Flawed Sapphire</td><td>1 Fal Rune</td></tr>
-                <tr><td>3 Fal Runes + 1 Flawed Ruby</td><td>1 Lem Rune</td></tr>
-                <tr><td>3 Lem Runes + 1 Flawed Emerald</td><td>1 Pul Rune</td></tr>
-                <tr><td>2 Pul Runes + 1 Flawed Diamond</td><td>1 Um Rune</td></tr>
-                <tr><td>2 Um Runes + 1 Topaz</td><td>1 Mal Rune</td></tr>
-                <tr><td>2 Mal Runes + 1 Amethyst</td><td>1 Ist Rune</td></tr>
-                <tr><td>2 Ist Runes + 1 Sapphire</td><td>1 Gul Rune</td></tr>
-                <tr><td>2 Gul Runes + 1 Ruby</td><td>1 Vex Rune</td></tr>
-                <tr><td>2 Vex Runes + 1 Emerald</td><td>1 Ohm Rune</td></tr>
-                <tr><td>2 Ohm Runes + 1 Diamond</td><td>1 Lo Rune</td></tr>
-                <tr><td>2 Lo Runes + 1 Flawless Topaz</td><td>1 Sur Rune</td></tr>
-                <tr><td>2 Sur Runes + 1 Flawless Amethyst</td><td>1 Ber Rune</td></tr>
-                <tr><td>2 Ber Runes + 1 Flawless Sapphire</td><td>1 Jah Rune</td></tr>
-                <tr><td>2 Jah Runes + 1 Flawless Ruby</td><td>1 Cham Rune</td></tr>
-                <tr><td>2 Cham Runes + 1 Flawless Emerald</td><td>1 Zod Rune</td></tr>
-
-                <!-- Gem Upgrades -->
-                <tr><td>3 Chipped Gems (same type)</td><td>1 Flawed Gem (same type)</td></tr>
-                <tr><td>3 Flawed Gems (same type)</td><td>1 Standard Gem (same type)</td></tr>
-                <tr><td>3 Standard Gems (same type)</td><td>1 Flawless Gem (same type)</td></tr>
-                <tr><td>3 Flawless Gems (same type)</td><td>1 Perfect Gem (same type)</td></tr>
-
-                <!-- Socketing -->
-                <tr><td>1 Ral Rune + 1 Amn Rune + 1 Perfect Amethyst + Normal Weapon</td><td>Socketed Weapon (1-6 sockets, random)</td></tr>
-                <tr><td>1 Tal Rune + 1 Thul Rune + 1 Perfect Topaz + Normal Body Armor</td><td>Socketed Body Armor (1-4 sockets, random)</td></tr>
-                <tr><td>1 Ral Rune + 1 Thul Rune + 1 Perfect Sapphire + Normal Helm</td><td>Socketed Helm (1-3 sockets, random)</td></tr>
-                <tr><td>1 Tal Rune + 1 Amn Rune + 1 Perfect Ruby + Normal Shield</td><td>Socketed Shield (1-4 sockets, random)</td></tr>
-
-                <!-- Rerolling -->
-                <tr><td>3 Perfect Gems (any type) + 1 Magic Item</td><td>Rerolled Magic Item (same type, new mods)</td></tr>
-                <tr><td>6 Perfect Skulls + 1 Rare Item</td><td>Rerolled Rare Item (same type, new mods)</td></tr>
-                <tr><td>1 Perfect Skull + 1 Stone of Jordan + 1 Rare Item</td><td>Add 1 Socket to Rare Item (if possible)</td></tr>
-                <tr><td>3 Chipped Gems (any type) + 1 Magic Weapon</td><td>Rerolled Magic Weapon (new mods)</td></tr>
-                <tr><td>3 Perfect Gems (any type) + 1 Socketed Magic Weapon</td><td>Rerolled Socketed Magic Weapon (new mods)</td></tr>
-
-                <!-- Upping Items -->
-                <tr><td>1 Ort Rune + 1 Amn Rune + 1 Perfect Sapphire + Normal Unique Weapon</td><td>Exceptional Unique Weapon</td></tr>
-                <tr><td>1 Lum Rune + 1 Pul Rune + 1 Perfect Emerald + Exceptional Unique Weapon</td><td>Elite Unique Weapon</td></tr>
-                <tr><td>1 Ko Rune + 1 Lem Rune + 1 Perfect Diamond + Normal Unique Armor</td><td>Exceptional Unique Armor</td></tr>
-                <tr><td>1 Fal Rune + 1 Um Rune + 1 Perfect Sapphire + Exceptional Unique Armor</td><td>Elite Unique Armor</td></tr>
-                <tr><td>1 Ort Rune + 1 Thul Rune + 1 Perfect Amethyst + Normal Set Weapon</td><td>Exceptional Set Weapon</td></tr>
-                <tr><td>1 Ko Rune + 1 Pul Rune + 1 Perfect Ruby + Exceptional Set Weapon</td><td>Elite Set Weapon</td></tr>
-                <tr><td>1 Ral Rune + 1 Sol Rune + 1 Perfect Emerald + Normal Set Armor</td><td>Exceptional Set Armor</td></tr>
-                <tr><td>1 Fal Rune + 1 Um Rune + 1 Perfect Topaz + Exceptional Set Armor</td><td>Elite Set Armor</td></tr>
-
-                <!-- Miscellaneous -->
-                <tr><td>1 Wirt’s Leg + 1 Tome of Town Portal</td><td>Red Portal to Secret Cow Level</td></tr>
-                <tr><td>1 Key of Terror + 1 Key of Hate + 1 Key of Destruction</td><td>Random Red Portal (Uber Duriel, Uber Izual, or Lilith)</td></tr>
-                <tr><td>1 Diablo’s Horn + 1 Baal’s Eye + 1 Mephisto’s Brain</td><td>Red Portal to Uber Tristram</td></tr>
-                <tr><td>1 Twisted Essence of Suffering + 1 Charged Essence of Hatred + 1 Burning Essence of Terror + 1 Festering Essence of Destruction</td><td>Token of Absolution</td></tr>
-                <tr><td>1 Standard of Heroes + 1 Perfect Skull</td><td>Rerolled Standard of Heroes (new mods)</td></tr>
-
-                <!-- Crafting (Examples) -->
-                <tr><td>1 Magic Ring + 1 Perfect Emerald + 1 Antidote Potion</td><td>Crafted Ring (ilvl-based mods)</td></tr>
-                <tr><td>1 Magic Amulet + 1 Perfect Ruby + 1 Exploding Potion</td><td>Crafted Amulet (ilvl-based mods)</td></tr>
-                <tr><td>1 Magic Jewel + 1 Perfect Sapphire + 1 Thawing Potion</td><td>Crafted Jewel (ilvl-based mods)</td></tr>
+                <tr><td>Insight (for A2 Merc)</td><td>RalTirTalSol</td><td>4os Eth. Thresher, 4os Eth. Giant Thresher, 4os Eth. Mancatcher</td></tr>
+                <tr><td>Lawbringer (for A5 Merc)</td><td>AmnLemKo</td><td>0/3os Eth. Legend Sword</td></tr>
+                <tr><td>Lionheart</td><td>HelLumFal</td><td>3os Archon Plate</td></tr>
+                <tr><td>Memory</td><td>LumIoSolEth</td><td>4os Staves with +3 Energy Shield (+$ for additional points in Shiver Armor)</td></tr>
+                <tr><td>Obedience</td><td>HelKoThulEthFal</td><td>5os War Pike</td></tr>
+                <tr><td>Smoke</td><td>NefLum</td><td>2os Mage Plate</td></tr>
+                <tr><td>Spirit</td><td>TalThulOrtAmn</td><td>4os Crystal Sword, 0/4os Monarch</td></tr>
+            </tbody>
+        </table>
+        <h3>Mid/Late-Game Runewords</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Runeword</th>
+                    <th>Runes</th>
+                    <th>Recommended Bases</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Beast (for A5 Merc)</td><td>BerTirUmMalLum</td><td>5os Eth. Berserker Axe</td></tr>
+                <tr><td>Breath of the Dying</td><td>VexHelElEldZodEth</td><td>0/6os Eth. Berserker Axe, 0/6os Eth. Glorious Axe, 0/6os Eth. Matriarchal Pike with +3 Javelin and Spear Skills, 0/6os Eth. Thunder Maul, 0/6os Eth. War Pike</td></tr>
+                <tr><td>Chains of Honor</td><td>DolUmBerIst</td><td>0/4os Archon Plate, 0/4os Dusk Shroud</td></tr>
+                <tr><td>Death</td><td>HelElVexOrtGul</td><td>5os Eth. Berserker Axe</td></tr>
+                <tr><td>Destruction</td><td>VexLoBerJahKo</td><td>5os Thunder Maul, 5os War Pike</td></tr>
+                <tr><td>Dream</td><td>IoJahPul</td><td>3os Elite Paladin Shields with 35+ All Resistances</td></tr>
+                <tr><td>Enigma</td><td>JahIthBer</td><td>3os Dusk Shroud, 3os Mage Plate</td></tr>
+                <tr><td>Exile</td><td>VexOhmIstDol</td><td>0/4os Eth. Elite Paladin Shields with 35+ All Resistances</td></tr>
+                <tr><td>Fortitude</td><td>ElSolDolLo</td><td>0/4os Archon Plate</td></tr>
+                <tr><td>Grief</td><td>EthTirLoMalRal</td><td>5os Phase Blade</td></tr>
+                <tr><td>Heart of the Oak</td><td>KoVexPulThul</td><td>4os Flail</td></tr>
+                <tr><td>Infinity</td><td>BerMalBerIst</td><td>4os Eth. Thresher (for A2 Merc), 4os Eth. Giant Thresher (for A2 Merc), 4os Eth. Mancatcher (for A2 Merc), 4os Matriarchal Pike with +3 Javelin and Spear Skills</td></tr>
+                <tr><td>Phoenix</td><td>VexVexLoJah</td><td>0/4os Elite Paladin Shields with 35+ All Resistances</td></tr>
+                <tr><td>Oath</td><td>ShaelPulMalLum</td><td>4os Eth. Berserker Axe, 4os Eth. Ettin Axe</td></tr>
+                <tr><td>Stone</td><td>ShaelUmPulLum</td><td>0/4os Eth. Archon Plate, 0/4os Eth. Sacred Armor</td></tr>
+                <tr><td>Wrath</td><td>PulLumBerMal</td><td>0/4os Great Bow</td></tr>
             </tbody>
         </table>
     </details>
 
-    <!-- Stat Breakpoints Section -->
+    <!-- Additional Sections (Placeholders) -->
+    <details id="cube">
+        <summary>Cube Recipes</summary>
+        <p>Add your cube recipes here.</p>
+    </details>
+
     <details id="breakpoints">
         <summary>Stat Breakpoints</summary>
-        <p>Faster Cast Rate (FCR) breakpoints for all classes, sourced from Maxroll.gg.</p>
-        
-        <h3>Sorceress</h3>
-        <table>
-            <thead><tr><th>FCR %</th><th>Frames</th></tr></thead>
-            <tbody>
-                <tr><td>0</td><td>13</td></tr>
-                <tr><td>9</td><td>12</td></tr>
-                <tr><td>20</td><td>11</td></tr>
-                <tr><td>37</td><td>10</td></tr>
-                <tr><td>63</td><td>9</td></tr>
-                <tr><td>105</td><td>8</td></tr>
-                <tr><td>200</td><td>7</td></tr>
-            </tbody>
-        </table>
-
-        <h3>Paladin</h3>
-        <table>
-            <thead><tr><th>FCR %</th><th>Frames</th></tr></thead>
-            <tbody>
-                <tr><td>0</td><td>15</td></tr>
-                <tr><td>9</td><td>14</td></tr>
-                <tr><td>18</td><td>13</td></tr>
-                <tr><td>30</td><td>12</td></tr>
-                <tr><td>48</td><td>11</td></tr>
-                <tr><td>75</td><td>10</td></tr>
-                <tr><td>125</td><td>9</td></tr>
-            </tbody>
-        </table>
-
-        <h3>Necromancer</h3>
-        <table>
-            <thead><tr><th>FCR %</th><th>Frames</th></tr></thead>
-            <tbody>
-                <tr><td>0</td><td>15</td></tr>
-                <tr><td>9</td><td>14</td></tr>
-                <tr><td>18</td><td>13</td></tr>
-                <tr><td>30</td><td>12</td></tr>
-                <tr><td>48</td><td>11</td></tr>
-                <tr><td>75</td><td>10</td></tr>
-                <tr><td>125</td><td>9</td></tr>
-            </tbody>
-        </table>
-
-        <h3>Druid (Human Form)</h3>
-        <table>
-            <thead><tr><th>FCR %</th><th>Frames</th></tr></thead>
-            <tbody>
-                <tr><td>0</td><td>15</td></tr>
-                <tr><td>4</td><td>14</td></tr>
-                <tr><td>10</td><td>13</td></tr>
-                <tr><td>19</td><td>12</td></tr>
-                <tr><td>30</td><td>11</td></tr>
-                <tr><td>46</td><td>10</td></tr>
-                <tr><td>68</td><td>9</td></tr>
-                <tr><td>99</td><td>8</td></tr>
-                <tr><td>163</td><td>7</td></tr>
-            </tbody>
-        </table>
-
-        <h3>Assassin</h3>
-        <table>
-            <thead><tr><th>FCR %</th><th>Frames</th></tr></thead>
-            <tbody>
-                <tr><td>0</td><td>16</td></tr>
-                <tr><td>8</td><td>15</td></tr>
-                <tr><td>16</td><td>14</td></tr>
-                <tr><td>27</td><td>13</td></tr>
-                <tr><td>42</td><td>12</td></tr>
-                <tr><td>65</td><td>11</td></tr>
-                <tr><td>102</td><td>10</td></tr>
-                <tr><td>174</td><td>9</td></tr>
-            </tbody>
-        </table>
-
-        <h3>Amazon</h3>
-        <table>
-            <thead><tr><th>FCR %</th><th>Frames</th></tr></thead>
-            <tbody>
-                <tr><td>0</td><td>15</td></tr>
-                <tr><td>7</td><td>14</td></tr>
-                <tr><td>14</td><td>13</td></tr>
-                <tr><td>23</td><td>12</td></tr>
-                <tr><td>34</td><td>11</td></tr>
-                <tr><td>52</td><td>10</td></tr>
-                <tr><td>83</td><td>9</td></tr>
-                <tr><td>142</td><td>8</td></tr>
-            </tbody>
-        </table>
-
-        <h3>Barbarian</h3>
-        <table>
-            <thead><tr><th>FCR %</th><th>Frames</th></tr></thead>
-            <tbody>
-                <tr><td>0</td><td>15</td></tr>
-                <tr><td>9</td><td>14</td></tr>
-                <tr><td>18</td><td>13</td></tr>
-                <tr><td>30</td><td>12</td></tr>
-                <tr><td>48</td><td>11</td></tr>
-                <tr><td>75</td><td>10</td></tr>
-                <tr><td>125</td><td>9</td></tr>
-            </tbody>
-        </table>
+        <p>Add your stat breakpoints here.</p>
     </details>
 
-    <!-- Shopping Guide Section -->
     <details id="shopping">
         <summary>Shopping Guide</summary>
-        <p>Where to buy useful items from vendors. Includes items for all characters, class-specific items, and ladder reset items. Levels marked with ** indicate the lowest possible level to get the affix(es), *** indicate the recommended shopping level, and **** indicate the highest possible level breakpoint for the best affix.</p>
-        
-        <h3>Weapons for All Characters</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Item Type</th>
-                    <th>Desired Stats</th>
-                    <th>Vendor & Location</th>
-                    <th>Recommended Level/Difficulty</th>
-                    <th>Notes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>Weapon of Life Tap (Wand/Daggers)</td><td>Life Tap</td><td>Malah Hell, Drognan Hell</td><td>19**, 78***, 91****</td><td></td></tr>
-                <tr><td>Weapon of Lower Resist (Wand/Daggers)</td><td>Lower Resist</td><td>Malah Hell, Drognan Hell</td><td>30**, 71***, 94****</td><td></td></tr>
-                <tr><td>Weapon of Poison Dagger (Dagger)</td><td>Poison Dagger</td><td>Malah Hell, Drognan Hell</td><td>7**, 78***, 89****</td><td></td></tr>
-                <tr><td>Weapon of Weaken (Wand/Daggers)</td><td>Weaken</td><td>Malah Hell, Drognan Hell</td><td>7**, 78***, 89****</td><td></td></tr>
-                <tr><td>Weapon of Confusion (Wand/Daggers)</td><td>Confusion</td><td>Malah Hell, Drognan Hell</td><td>19**, 78***, 91****</td><td></td></tr>
-                <tr><td>Weapon of Telekinesis (Staff, Scepter)</td><td>Telekinesis</td><td>Drognan Hell</td><td>19**, 78***, 89****</td><td></td></tr>
-                <tr><td>Weapon of Teleportation (Staff)</td><td>Teleportation</td><td>Drognan Hell</td><td>19**, 78***, 91****</td><td></td></tr>
-                <tr><td>Edge Runeword Base (Bow/Crossbow)</td><td></td><td>Charsi Normal</td><td>1**</td><td></td></tr>
-                <tr><td>Black Runeword Base (Mace, Flail)</td><td></td><td>Fara Normal</td><td>1**</td><td></td></tr>
-                <tr><td>Leaf Runeword Base (Staves)</td><td>+3 Firebolt, +3 Fireball, +3 Enflame</td><td>Drognan Normal, Akara Normal</td><td>1-13**</td><td></td></tr>
-                <tr><td>Crafting Blood Weapon (Military Picks)</td><td></td><td>Gheed Nm</td><td>54*, 70** (craft at 70+)</td><td></td></tr>
-            </tbody>
-        </table>
-
-        <h3>Armors for All Characters</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Item Type</th>
-                    <th>Desired Stats</th>
-                    <th>Vendor & Location</th>
-                    <th>Recommended Level/Difficulty</th>
-                    <th>Notes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>Belt (any Belt)</td><td>Serpents / Cobalt / Jade / Garnet / Coral Belt of the Whale (+20mana or +30 to a resist +100 life)</td><td>Elsix Nm</td><td>65** (***)</td><td></td></tr>
-                <tr><td>Crafting Casterbelt Base (Light Belt, Sharkskin Belt)</td><td></td><td>Elsix Nm</td><td>20**, 72*** (Light Belt), 83*** (Sharkskin Belt)</td><td>Craft at same level</td></tr>
-                <tr><td>Crafting Bloodgloves Base (Heavy Gloves, Sharkskin Gloves)</td><td></td><td>Charsi Nm (Heavy Gloves), Gheed Nm (Sharkskin Gloves)</td><td>20**, 69-72*** (Heavy Gloves), 76-77*** (Sharkskin Gloves)</td><td>Craft at same level</td></tr>
-                <tr><td>Crafting Hitpower Gloves Base (Chain Gloves, Heavy Bracers)</td><td></td><td>Gheed Nm (Chain Gloves), Fara Nm (Heavy Bracers)</td><td>20**, 69-71*** (Chain Gloves), 77-78*** (Heavy Bracers)</td><td>Craft at same level</td></tr>
-            </tbody>
-        </table>
-
-        <h3>Class-Specific Items</h3>
-        <h4>Assassin</h4>
-        <table>
-            <thead>
-                <tr>
-                    <th>Item Type</th>
-                    <th>Desired Stats</th>
-                    <th>Vendor & Location</th>
-                    <th>Recommended Level/Difficulty</th>
-                    <th>Notes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>Cunning Claws of Quickness</td><td>+3 Traps, +40 IAS, +3 Lightning Sentry / +3 Wake of Fire / +3 Blade Shield / +3 Blade Throw</td><td>Anya Hell</td><td>75** (higher = better)</td><td></td></tr>
-            </tbody>
-        </table>
-
-        <h4>Amazon</h4>
-        <table>
-            <thead>
-                <tr>
-                    <th>Item Type</th>
-                    <th>Desired Stats</th>
-                    <th>Vendor & Location</th>
-                    <th>Recommended Level/Difficulty</th>
-                    <th>Notes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>Lancer's Javelin of Quickness</td><td>+3 Javelin and Spear Skills, +40 IAS</td><td>Malah Nm/Hell</td><td>75**</td><td></td></tr>
-                <tr><td>Archers Gloves of Alacrity</td><td>+3 Bow and Crossbow Skills, +20 IAS</td><td>Charsi Hell, Anya Nm/Hell</td><td>55**, 68-74 (Charsi Hell), 75+ (Anya Nm/Hell)</td><td></td></tr>
-                <tr><td>Lancer's Gloves of Alacrity</td><td>+3 Javelin and Spear Skills, +20 IAS</td><td>Charsi Hell, Anya Nm/Hell</td><td>55**, 68-74 (Charsi Hell), 75+ (Anya Nm/Hell)</td><td></td></tr>
-            </tbody>
-        </table>
-
-        <h4>Barbarian</h4>
-        <table>
-            <thead>
-                <tr>
-                    <th>Item Type</th>
-                    <th>Desired Stats</th>
-                    <th>Vendor & Location</th>
-                    <th>Recommended Level/Difficulty</th>
-                    <th>Notes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>Echoing Weapon (Bo-stick)</td><td>+3 warcries</td><td>Charsi Nm, Malah Nm, Anya Nm, Larzuk Nm</td><td>55**, 75***</td><td></td></tr>
-            </tbody>
-        </table>
-
-        <h4>Druid</h4>
-        <table>
-            <thead>
-                <tr>
-                    <th>Item Type</th>
-                    <th>Desired Stats</th>
-                    <th>Vendor & Location</th>
-                    <th>Recommended Level/Difficulty</th>
-                    <th>Notes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>Gaean Club of XX</td><td>+3 Elemental Skills + XX</td><td>Gheed Nm, Charsi Nm</td><td>55**, 71***</td><td>Bad at shopping</td></tr>
-                <tr><td>Keepers Club of XX</td><td>+3 Summoning Skills + XX</td><td>Gheed Nm, Charsi Nm</td><td>55**, 71***</td><td>Bad at shopping</td></tr>
-            </tbody>
-        </table>
-
-        <h4>Necromancer</h4>
-        <table>
-            <thead>
-                <tr>
-                    <th>Item Type</th>
-                    <th>Desired Stats</th>
-                    <th>Vendor & Location</th>
-                    <th>Recommended Level/Difficulty</th>
-                    <th>Notes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>White Runeword Base (Wand)</td><td>+3 Bone Spear, +3 Desecrate, +3 Corpse Explosion (Bone Wand or Grim Wand only)</td><td>Drognan Normal</td><td>13**</td><td></td></tr>
-            </tbody>
-        </table>
-
-        <h4>Paladin</h4>
-        <table>
-            <thead>
-                <tr>
-                    <th>Item Type</th>
-                    <th>Desired Stats</th>
-                    <th>Vendor & Location</th>
-                    <th>Recommended Level/Difficulty</th>
-                    <th>Notes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>Rose Branded Scepter of the Apprentice</td><td>+3 Combat Skills, +10 FCR, +3 Holy Bolt / +3 Fist of the Heavens</td><td>Drognan Nm/Hell, Malah Nm/Hell</td><td>55**, 65*** (Hell Drognan), 75*** (Nm Drognan, Nm/Hell Malah)</td><td></td></tr>
-                <tr><td>Marshal's Scepter of XX</td><td>+3 Offensive Auras, +3 Sanctuary</td><td>Drognan Nm/Hell, Malah Nm/Hell</td><td>55**, 65*** (Hell Drognan), 75*** (Nm Drognan, Nm/Hell Malah)</td><td></td></tr>
-            </tbody>
-        </table>
-
-        <h3>Ladder Reset Items</h3>
-        <h4>Weapons</h4>
-        <table>
-            <thead>
-                <tr>
-                    <th>Item Type</th>
-                    <th>Desired Stats</th>
-                    <th>Vendor & Location</th>
-                    <th>Recommended Level/Difficulty</th>
-                    <th>Notes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>Leaf Runeword Base (Staves)</td><td>+3 Firebolt, +3 Fireball, +3 Enflame</td><td>Drognan Normal, Akara Normal</td><td>1-13**</td><td></td></tr>
-                <tr><td>Steel Runeword Base (Flail)</td><td></td><td>Fara Normal</td><td>1**</td><td></td></tr>
-                <tr><td>Malice Runeword Base</td><td></td><td></td><td></td><td></td></tr>
-            </tbody>
-        </table>
-
-        <h4>Armors</h4>
-        <table>
-            <thead>
-                <tr>
-                    <th>Item Type</th>
-                    <th>Desired Stats</th>
-                    <th>Vendor & Location</th>
-                    <th>Recommended Level/Difficulty</th>
-                    <th>Notes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>Ancients Pledge Runeword Base (Large Shield)</td><td></td><td>Fara Normal</td><td>1**</td><td></td></tr>
-                <tr><td>Stealth Runeword Base (2os Body Armor)</td><td></td><td></td><td></td><td></td></tr>
-                <tr><td>2-3os Great Helm</td><td></td><td></td><td></td><td></td></tr>
-                <tr><td>2-3os Crown</td><td></td><td></td><td></td><td></td></tr>
-                <tr><td>2-3os Mask</td><td></td><td></td><td></td><td></td></tr>
-                <tr><td>Plated Belt</td><td>+30 or more life</td><td></td><td></td><td></td></tr>
-            </tbody>
-        </table>
+        <p>Add your shopping guide here.</p>
     </details>
 
-    <!-- Ubers Guide Section -->
     <details id="ubers">
         <summary>Ubers Guide</summary>
-        <h3>Accessing Uber Tristram</h3>
-        <ol>
-            <li>Collect Keys in Hell difficulty:
-                <ul>
-                    <li>Terror Key: The Countess</li>
-                    <li>Hate Key: The Summoner</li>
-                    <li>Destruction Key: Nihlathak</li>
-                </ul>
-            </li>
-            <li>Open portals by combining 1 of each key in the Cube (random portal to Uber Duriel, Uber Izual, or Lilith).</li>
-            <li>Defeat each boss for:
-                <ul>
-                    <li>Baal’s Eye (Uber Izual)</li>
-                    <li>Mephisto’s Brain (Lilith)</li>
-                    <li>Diablo’s Horn (Uber Duriel)</li>
-                </ul>
-            </li>
-            <li>Combine all three organs in the Cube in Harrogath to open Uber Tristram.</li>
-        </ol>
-        <h3>Defeating Ubers</h3>
-        <p>Gear for high resistances (75%+), life steal, and Crushing Blow. Target Uber Mephisto first (due to Conviction aura), then Baal, then Diablo. Reward: Hellfire Torch.</p>
+        <p>Add your ubers guide here.</p>
     </details>
 
-    <!-- Rune Bases Section -->
     <details id="bases">
         <summary>Rune Bases</summary>
-        <p>Good bases for popular runewords and where they drop.</p>
-        <table>
-            <thead>
-                <tr>
-                    <th>Base Item</th>
-                    <th>Runeword</th>
-                    <th>Drop Location</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>4-Socket Polearms (e.g., Thresher)</td><td>Insight, Infinity</td><td>Act 5 Normal, Hell Cow Level</td></tr>
-                <tr><td>3-Socket Body Armor (e.g., Dusk Shroud)</td><td>Enigma</td><td>Hell Act 1-5</td></tr>
-                <tr><td>5-Socket Swords/Axes (e.g., Phase Blade)</td><td>Grief</td><td>Hell Baal, Pit runs</td></tr>
-                <tr><td>4-Socket Shields (e.g., Monarch)</td><td>Spirit</td><td>Hell Act 1, Cow Level</td></tr>
-            </tbody>
-        </table>
+        <p>Add your rune bases here.</p>
     </details>
 
-    <!-- Upping Items Section -->
     <details id="upping">
         <summary>Upping Items</summary>
-        <p>Upgrading unique and set items to exceptional or elite versions.</p>
-        <h3>Recipes</h3>
-        <ul>
-            <li><strong>Unique Items:</strong>
-                <ul>
-                    <li>Normal → Exceptional: 1 Ort + 1 Amn + 1 Perfect Sapphire + Normal Unique Weapon</li>
-                    <li>Exceptional → Elite: 1 Lum + 1 Pul + 1 Perfect Emerald + Exceptional Unique Weapon</li>
-                </ul>
-            </li>
-            <li><strong>Set Items:</strong>
-                <ul>
-                    <li>Normal → Exceptional: 1 Ko + 1 Lem + 1 Perfect Diamond + Normal Set Armor</li>
-                    <li>Exceptional → Elite: 1 Fal + 1 Um + 1 Perfect Sapphire + Exceptional Set Armor</li>
-                </ul>
-            </li>
-        </ul>
-        <p>Note: Upping increases level requirements.</p>
+        <p>Add your upping items guide here.</p>
     </details>
 
-    <!-- Essences Section -->
     <details id="essences">
         <summary>Essences</summary>
-        <p>Essences drop from Hell difficulty bosses for crafting Tokens of Absolution.</p>
-        <table>
-            <thead>
-                <tr>
-                    <th>Essence</th>
-                    <th>Boss</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>Twisted Essence of Suffering</td><td>Andariel, Duriel</td></tr>
-                <tr><td>Charged Essence of Hatred</td><td>Mephisto</td></tr>
-                <tr><td>Burning Essence of Terror</td><td>Diablo</td></tr>
-                <tr><td>Festering Essence of Destruction</td><td>Baal</td></tr>
-            </tbody>
-        </table>
-        <p>Combine all four in the Cube for a Token of Absolution (resets skills/stats).</p>
+        <p>Add your essences information here.</p>
     </details>
 
-    <!-- Larzuk Socket Quest Section -->
     <details id="larzuk">
         <summary>Larzuk Socket Quest</summary>
-        <p>Larzuk adds sockets as a reward for completing "Siege on Harrogath" (kill Shenk the Overseer in Act 5).</p>
-        <ul>
-            <li><strong>White Items:</strong> Adds max sockets based on item type and ilvl.</li>
-            <li><strong>Unique/Set Items:</strong> Adds 1 socket.</li>
-        </ul>
-        <p>Tip: Save for ethereal bases or unique weapons like Windforce.</p>
+        <p>Add your Larzuk socket quest details here.</p>
     </details>
 
     <script>
         const searchInput = document.getElementById('search');
         searchInput.addEventListener('input', function() {
             const searchTerm = this.value.toLowerCase();
-            const rows = document.querySelectorAll('tbody tr');
-            rows.forEach(row => {
-                const text = row.textContent.toLowerCase();
-                row.style.display = text.includes(searchTerm) ? '' : 'none';
+            // Remove existing highlights
+            document.querySelectorAll('.highlight').forEach(span => {
+                span.outerHTML = span.textContent;
             });
+            const detailsElements = document.querySelectorAll('details');
+            let firstMatchDetails = null;
+            detailsElements.forEach(details => {
+                const rows = details.querySelectorAll('tbody tr');
+                let hasMatch = false;
+                rows.forEach(row => {
+                    const text = row.textContent.toLowerCase();
+                    if (text.includes(searchTerm)) {
+                        hasMatch = true;
+                        row.style.display = '';
+                        row.querySelectorAll('td').forEach(td => {
+                            highlightInElement(td, searchTerm);
+                        });
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+                details.open = hasMatch;
+                if (hasMatch && !firstMatchDetails) {
+                    firstMatchDetails = details;
+                }
+            });
+            if (firstMatchDetails) {
+                firstMatchDetails.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
         });
+
+        function highlightInElement(element, searchTerm) {
+            if (!searchTerm) return;
+            const regex = new RegExp(`(${searchTerm})`, 'gi');
+            const text = element.textContent;
+            const newText = text.replace(regex, '<span class="highlight">$1</span>');
+            element.innerHTML = newText;
+        }
     </script>
 </body>
 </html>
